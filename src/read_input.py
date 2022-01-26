@@ -39,5 +39,5 @@ def read_input(file):
         for i in range(clients):
             nodes[i]['capacity'] = int(f.readline().split()[1])
         
-        print(nodes)
+    return nodes, vehicles, clients, vehicle_capacity
 
