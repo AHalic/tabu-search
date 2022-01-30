@@ -2,15 +2,7 @@ from pydoc import cli
 import re
 import numpy as np
 
-def create_node(coordinates):
-    node = {
-        'index': int(coordinates[0]) - 1,
-        'x': float(coordinates[1]),
-        'y': float(coordinates[2]),
-        'capacity': 0 # initialized as 0
-    }
-
-    return node
+from graph import create_node
 
 def read_input(file):
     # regular expressions to get numbers from string
@@ -40,4 +32,3 @@ def read_input(file):
             nodes[i]['capacity'] = int(f.readline().split()[1])
         
     return nodes, vehicles, clients, vehicle_capacity
-
