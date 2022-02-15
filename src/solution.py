@@ -2,7 +2,7 @@ import numpy as np
 
 from graph import *
 
-def create_initial_sol(nodes, sorted_nodes, vehicles, limit):
+def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limit:int) -> list[np.array]:
     solution = [np.zeros(1) for i in range(vehicles)]
 
     route = 0
