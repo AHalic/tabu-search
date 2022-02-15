@@ -28,3 +28,18 @@ def total_distance(route: list[np.array], nodes: np.array) -> float:
     
     aux += distance(nodes[0], nodes[get_city(nodes,route[-1])])
     return aux
+    
+def get_city(nodes, value):
+    # returns city position from nodes list by the value of the index key
+    for i, dic in enumerate(nodes):
+        if dic['index'] == value:
+            return i
+    return -1
+
+def city_capacity(nodes, index):
+    # return city capacity, using index ordered list
+    return nodes[int(index)]['capacity']
+
+def sum_route_capacity(route, nodes):
+    # sum all of city's capacity in route array
+    return sum([city_capacity(nodes, city) for city in route])
