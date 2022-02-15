@@ -1,21 +1,21 @@
 import numpy as np
 
-def get_city(nodes, value):
+def get_city(nodes:np.array, value:int) -> int:
     # returns city position from nodes list by the value of the index key
     for i, dic in enumerate(nodes):
         if dic['index'] == value:
             return i
     return -1
 
-def city_capacity(nodes, index):
+def city_capacity(nodes: np.array, index:int) -> float:
     # return city capacity, using index ordered list
     return nodes[get_city(nodes, index)]['capacity']
 
-def sum_route_capacity(route, nodes):
+def sum_route_capacity(route:list[np.array], nodes:np.array) -> float:
     # sum all of city's capacity in route array
     return sum([city_capacity(nodes, city) for city in route])
 
-def create_initial_sol(nodes, sorted_nodes, vehicles, limit):
+def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limit:int) -> list[np.array]:
     solution = [np.zeros(1) for i in range(vehicles)]
 
     route = 0

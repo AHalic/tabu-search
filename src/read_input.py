@@ -4,7 +4,7 @@ import numpy as np
 
 from graph import create_node
 
-def read_input(file):
+def read_input(file: str) -> tuple[np.array, int, int, int]:
     # regular expressions to get numbers from string
     regex = re.compile(r'\d+')
 
