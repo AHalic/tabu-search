@@ -1,7 +1,4 @@
-from cv2 import sqrt
 import numpy as np
-
-from solution import *
 
 def create_node(coordinates:tuple[int, float, float]) -> dict:
     node = {
@@ -20,19 +17,28 @@ def sort_nodes(nodes:np.array) -> np.array:
 def distance(node1: dict, node2:dict) -> float:
     return ((node1['x'] - node2['x'])**2 + (node1['y'] - node2['y'])**2)**1/2
 
-def total_distance(route: list[np.array], nodes: np.array) -> float:
+def route_distance(route: np.array, nodes: np.array) -> float:
+    #print("len",len(route), len(nodes))
     aux = distance(nodes[0], nodes[get_city(nodes,route[0])])
-    
     for i in range(len(route) - 1):
+        
+        #print(i, route)
         aux += distance(nodes[get_city(nodes,route[i])], nodes[get_city(nodes,route[i+1])])
     
     aux += distance(nodes[0], nodes[get_city(nodes,route[-1])])
     return aux
-    
+
+def total_distance(routes: list[np.array], nodes: np.array) -> float:
+    dist = 0
+    for i in range(len(routes)):
+        dist += route_distance(routes[i], nodes)
+
+    return dist
+
 def get_city(nodes, value):
     # returns city position from nodes list by the value of the index key
     for i, dic in enumerate(nodes):
-        if dic['index'] == value:
+        if dic['index'] == int(value):
             return i
     return -1
 
