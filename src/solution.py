@@ -1,6 +1,9 @@
 import numpy as np
+import random
 
-from graph import *
+from graph import sum_route_capacity
+
+ITER_SIZE = 100
 
 def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limit:int) -> list[np.array]:
     solution = [np.zeros(1) for i in range(vehicles)]
@@ -54,11 +57,27 @@ def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limi
 # - Tempo max: 300s
 # - x iterações sem modificação. x1 = 10 x2 = 50 x3 = 100 x4 = 1000
 
-def best_neighbor():
-    # of all neighbors, finds the one with the least time (distance)
+def swap(routes, current_sol, best_sol, dist_sol, dist_best_sol):
+    routes_flattened = routes.flatten()
+    solution = np.copy(current_sol)
+    
+    for i in range(ITER_SIZE):
+        city1 = random.choice(routes_flattened)
+        city2 = city1
+        while city2 != city1:
+            city2 = random.choice(routes_flattened)
+
+        tabu_move = set([city1, city2])
+        print(solution[np.where(solution == city1)[0]])
+        break
 
 
-    aux = (solution, distance, tabu_move)
-    current = (solution, distance, tabu_move)
-    # find swap solutions (notall of them)    # find add/remotabu 
-    pass
+
+# def best_neighbor():
+#     # of all neighbors, finds the one with the least time (distance)
+
+
+#     aux = (solution, distance, tabu_move)
+#     current = (solution, distance, tabu_move)
+#     # find swap solutions (notall of them)    # find add/remotabu 
+#     pass
