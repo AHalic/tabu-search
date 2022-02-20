@@ -1,12 +1,15 @@
+from typing import List
+
 import numpy as np
 import random
+from math import ceil
 
-from graph import sum_route_capacity
+from graph import sum_route_capacity, route_distance
 
 ITER_SIZE = 100
 
-def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limit:int) -> list[np.array]:
-    solution = [np.zeros(1) for i in range(vehicles)]
+def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limit:int) -> List[np.array]:
+    solution = [np.zeros(1).astype(int) for i in range(vehicles)]
 
     route = 0
     for node in sorted_nodes:
@@ -38,7 +41,7 @@ def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limi
 
 #TO DO:
 # Na busca de soluções:
-# Faz o vizinho se n é tabuu -> vertifica se é melhor q o vizinho atual
+# Faz o vizinho se n é tabu -> verifica se é melhor q o vizinho atual
 #   se é tabu -> calcula a distancia e ve se é melhor q a melhor solução (aspiration)
 #  apenas armazena a melhor e o atual, as distancias e o movimento tabu
 # Movimentos -> primeiro y swaps (escolher melhor movimento)
@@ -57,27 +60,70 @@ def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limi
 # - Tempo max: 300s
 # - x iterações sem modificação. x1 = 10 x2 = 50 x3 = 100 x4 = 1000
 
-def swap(routes, current_sol, best_sol, dist_sol, dist_best_sol):
-    routes_flattened = routes.flatten()
-    solution = np.copy(current_sol)
+def swap(solution, dist_sol, nodes, i_r1=-1, i_r2=-1, i_c1=-1, i_c2=-1):
+    new_solution = solution.copy()
+
+    # Choose random routes to swap
+    if i_r1 == -1:
+        i_r1 = random.randrange(0, len(solution))
+    if i_r2 == -1:
+        i_r2 = random.randrange(0, len(solution))
+
+    route1 = new_solution[i_r1]
+    route2 = new_solution[i_r2]
+
+    # Choose random cities in routes to swap
+    if i_c1 == -1:
+        i_c1 = random.randrange(0, len(route1))
     
-    for i in range(ITER_SIZE):
-        city1 = random.choice(routes_flattened)
-        city2 = city1
-        while city2 != city1:
-            city2 = random.choice(routes_flattened)
+    if i_c2 == -1:
+        i_c2 = random.randrange(0, len(route2))
 
-        tabu_move = set([city1, city2])
-        print(solution[np.where(solution == city1)[0]])
-        break
+    city1 = route1[i_c1]
+    city2 = route2[i_c2]
+
+    # Swap and create tabu move and solution
+    route1[i_c1], route2[i_c2] = city2, city1
+    new_solution[i_r1], new_solution[i_r2] = route1, route2
+    
+    tabu_move = set([city1, city2])
+
+    return new_solution, tabu_move, (i_r1, i_r2)
 
 
 
-# def best_neighbor():
-#     # of all neighbors, finds the one with the least time (distance)
+    # dist_aux = dist_sol - route_distance(route1, nodes) - route_distance(route2, nodes) 
+    # dist_aux += route_distance(route1, nodes) + route_distance(route2, nodes) 
+    # print('dist', dist_aux) 
+    
+# No best neighbor -> realiza o swap calcula para a nova solução a nova distancia e
+# a capacidade das rotas modificadas, se a capacidade for maior então refaz o movimento
+
+def best_neighbor(solution, best_solution, nodes, max_routes):
+    # swap cidades 1 e 9
+    # swap {c1, c2}
+    # lista tabu
+    # 10 rotas
+    # 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3+ 2 + 1 = 55 swaps
+    # 10 interswaps, 45 outerswaps
+
+    # 4 rotas
+    # 4 + 3 + 2 + 1 = 10 swaps
+    # 4 interswaps, 6 outerswaps
+
+    # shift {c3}
+    # {c1}
 
 
-#     aux = (solution, distance, tabu_move)
-#     current = (solution, distance, tabu_move)
-#     # find swap solutions (notall of them)    # find add/remotabu 
-#     pass
+
+#     Retorno de swap e shift: (solution, tabu_move)
+
+# TODO
+# - func shift
+# - calcular capacidade e distancia da solucao criada
+# - verificar se eh uma solucao dentro do limite de capacidade
+# - ver se o movimento eh tabu
+# - se for tabu, considerar como solucao se for melhor que a melhor solucao
+# - melhor solucao da vizinhança vira a current_solucao
+# - tempo para delimitar o algoritmo
+# - decidir outras condicoes paradas 
