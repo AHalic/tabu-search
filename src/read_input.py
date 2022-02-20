@@ -1,10 +1,11 @@
+from typing import Tuple, List
 from pydoc import cli
 import re
 import numpy as np
 
 from graph import create_node
 
-def read_input(file: str) -> tuple[np.array, int, int, int]:
+def read_input(file: str) -> Tuple[np.array, int, int, int]:
     # regular expressions to get numbers from string
     regex = re.compile(r'\d+')
 
