@@ -1,6 +1,8 @@
+from typing import Tuple, List
+
 import numpy as np
 
-def create_node(coordinates:tuple[int, float, float]) -> dict:
+def create_node(coordinates:Tuple[int, float, float]) -> dict:
     node = {
         'index': int(coordinates[0]) - 1,
         'x': float(coordinates[1]),
@@ -17,24 +19,27 @@ def sort_nodes(nodes:np.array) -> np.array:
 def distance(node1: dict, node2:dict) -> float:
     return ((node1['x'] - node2['x'])**2 + (node1['y'] - node2['y'])**2)**1/2
 
+def get_route(value: int, routes: List[np.array]):
+    for i, route in enumerate(routes):
+        if value in route:
+            return i
+
 def route_distance(route: np.array, nodes: np.array) -> float:
-    #print("len",len(route), len(nodes))
-    aux = distance(nodes[0], nodes[get_city(nodes,route[0])])
-    for i in range(len(route) - 1):
-        
-        #print(i, route)
-        aux += distance(nodes[get_city(nodes,route[i])], nodes[get_city(nodes,route[i+1])])
-    
-    aux += distance(nodes[0], nodes[get_city(nodes,route[-1])])
+    aux = distance(nodes[0], nodes[route[0]])
+    for i in range(len(route) - 1): 
+        aux += distance(nodes[route[i]], nodes[route[i+1]])
+
+    aux += distance(nodes[0], nodes[route[-1]])
     return aux
 
-def total_distance(routes: list[np.array], nodes: np.array) -> float:
+def total_distance(routes: List[np.array], nodes: np.array) -> float:
     dist = 0
     for i in range(len(routes)):
-        dist += route_distance(routes[i], nodes)
-
+        aux = route_distance(routes[i], nodes)
+        dist += aux
+    
     return dist
-
+    
 def get_city(nodes, value):
     # returns city position from nodes list by the value of the index key
     for i, dic in enumerate(nodes):
