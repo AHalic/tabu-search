@@ -3,8 +3,9 @@ from typing import List
 import numpy as np
 import random
 from math import ceil
+from main import show_route
 
-from graph import sum_route_capacity, route_distance
+from graph import sum_route_capacity, route_distance, total_distance
 
 ITER_SIZE = 100
 
@@ -60,8 +61,9 @@ def create_initial_sol(nodes:np.array, sorted_nodes:np.array, vehicles:int, limi
 # - Tempo max: 300s
 # - x iterações sem modificação. x1 = 10 x2 = 50 x3 = 100 x4 = 1000
 
-def swap(solution, dist_sol, nodes, i_r1=-1, i_r2=-1, i_c1=-1, i_c2=-1):
-    new_solution = solution.copy()
+def swap(solution, i_r1=-1, i_r2=-1, i_c1=-1, i_c2=-1, nodes=None):
+    # new_solution = solution.copy()
+    new_solution = [np.copy(route) for route in solution]
 
     # Choose random routes to swap
     if i_r1 == -1:
@@ -85,7 +87,12 @@ def swap(solution, dist_sol, nodes, i_r1=-1, i_r2=-1, i_c1=-1, i_c2=-1):
     # Swap and create tabu move and solution
     route1[i_c1], route2[i_c2] = city2, city1
     new_solution[i_r1], new_solution[i_r2] = route1, route2
-    
+
+    dist_aux = total_distance(solution, nodes) - route_distance(solution[i_r1], nodes) - route_distance(solution[i_r2], nodes) 
+    print('\nno swaap dist: ', dist_aux)
+    dist_aux += route_distance(new_solution[i_r1], nodes) + route_distance(new_solution[i_r2], nodes) 
+    print('result dist: ', dist_aux)
+
     tabu_move = set([city1, city2])
 
     return new_solution, tabu_move, (i_r1, i_r2)
@@ -99,7 +106,7 @@ def swap(solution, dist_sol, nodes, i_r1=-1, i_r2=-1, i_c1=-1, i_c2=-1):
 # No best neighbor -> realiza o swap calcula para a nova solução a nova distancia e
 # a capacidade das rotas modificadas, se a capacidade for maior então refaz o movimento
 
-def best_neighbor(solution, best_solution, nodes, max_routes):
+def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
     # swap cidades 1 e 9
     # swap {c1, c2}
     # lista tabu
@@ -113,6 +120,45 @@ def best_neighbor(solution, best_solution, nodes, max_routes):
 
     # shift {c3}
     # {c1}
+    # dist_sol = total_distance(solution, nodes)
+    current_sol, current_dist = None, None
+    
+    for i in range(0, max_routes):
+        for j in range(i, max_routes):
+            # Realiza o movimento swap
+            aux_solution, movement, _ = swap(solution, i, j, nodes=nodes)
+            show_route(aux_solution, nodes)
+            print()
+
+            # Calcula a capacidade das novas rotas
+            if sum_route_capacity(aux_solution[i], nodes) > capacity or sum_route_capacity(aux_solution[j], nodes) > capacity:
+                # TODO esse sum capacity parece bizarro
+                print('entrei', i, j)
+                print(sum_route_capacity(aux_solution[i], nodes))
+                print(sum_route_capacity(aux_solution[j], nodes))
+                continue
+            
+            # Calcula a distancia das novas rotas
+            dist_aux = dist_sol - route_distance(solution[i], nodes) - route_distance(solution[j], nodes) 
+            print('\ndist: ', dist_aux)
+            dist_aux += route_distance(aux_solution[i], nodes) + route_distance(aux_solution[j], nodes) 
+            print('result dist: ', dist_aux)
+
+            # atualiza a solução atual da vizinhança
+            if current_sol == None:
+                current_sol = aux_solution.copy()
+                current_dist = dist_aux
+            elif dist_aux < current_dist:
+                if movement not in tabu_list or dist_aux < dist_sol:
+                    current_sol = aux_solution.copy()
+                    current_dist = dist_aux
+    if current_sol != None:
+        # TODO tem q verificar o tamanho da lista tabu e o tenure
+        tabu_list.append(movement)
+    return current_sol, current_dist
+
+    
+
 
 
 
