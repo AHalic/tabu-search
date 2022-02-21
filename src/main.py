@@ -22,14 +22,21 @@ def algorithm(file):
 
     sorted_nodes = sort_nodes(nodes)
 
-    current_sol = create_initial_sol(nodes, sorted_nodes, vehicles, vehicle_capacity)
-    best_sol = copy(current_sol)
-    current_sol_dist = total_distance(current_sol, nodes)
+    best_sol = create_initial_sol(nodes, sorted_nodes, vehicles, vehicle_capacity)
+    # best_sol = copy(best_sol)
     best_sol_dist = total_distance(best_sol, nodes)
+    # best_sol_dist = total_distance(best_sol, nodes)
+
+    show_route(best_sol, nodes)
+    print(f"best distance: {best_sol_dist}\n")
+    #swap(best_sol, best_sol_dist, nodes)
     
+    tabu_list = []
+    current_sol, current_dist = best_neighbor(best_sol, best_sol_dist, nodes, 5, vehicle_capacity, tabu_list)
+
+    print('\noutside:\n')
     show_route(current_sol, nodes)
-    #swap(current_sol, current_sol_dist, nodes)
-    print(f"Current distance: {current_sol_dist}")
+    print(f"current distance: {current_dist}")    
 
 if __name__ == '__main__':
     args = sys.argv
