@@ -132,10 +132,6 @@ def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
 
             # Calcula a capacidade das novas rotas
             if sum_route_capacity(aux_solution[i], nodes) > capacity or sum_route_capacity(aux_solution[j], nodes) > capacity:
-                # TODO esse sum capacity parece bizarro
-                print('entrei', i, j)
-                print(sum_route_capacity(aux_solution[i], nodes))
-                print(sum_route_capacity(aux_solution[j], nodes))
                 continue
             
             # Calcula a distancia das novas rotas
