@@ -32,7 +32,7 @@ def algorithm(file):
     #swap(best_sol, best_sol_dist, nodes)
     
     tabu_list = []
-    current_sol, current_dist = best_neighbor(best_sol, best_sol_dist, nodes, 5, vehicle_capacity, tabu_list)
+    current_sol, current_dist = best_neighbor(best_sol, best_sol_dist, nodes, vehicles, vehicle_capacity, tabu_list)
 
     print('\noutside:\n')
     show_route(current_sol, nodes)
