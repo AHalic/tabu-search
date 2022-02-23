@@ -89,9 +89,9 @@ def swap(solution, i_r1=-1, i_r2=-1, i_c1=-1, i_c2=-1, nodes=None):
     new_solution[i_r1], new_solution[i_r2] = route1, route2
 
     dist_aux = total_distance(solution, nodes) - route_distance(solution[i_r1], nodes) - route_distance(solution[i_r2], nodes) 
-    print('\nno swaap dist: ', dist_aux)
+    # print('\nno swaap dist: ', dist_aux)
     dist_aux += route_distance(new_solution[i_r1], nodes) + route_distance(new_solution[i_r2], nodes) 
-    print('result dist: ', dist_aux)
+    # print('result dist: ', dist_aux)
 
     tabu_move = set([city1, city2])
 
@@ -106,7 +106,7 @@ def swap(solution, i_r1=-1, i_r2=-1, i_c1=-1, i_c2=-1, nodes=None):
 # No best neighbor -> realiza o swap calcula para a nova solução a nova distancia e
 # a capacidade das rotas modificadas, se a capacidade for maior então refaz o movimento
 
-def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
+def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, tenure):
     # swap cidades 1 e 9
     # swap {c1, c2}
     # lista tabu
@@ -127,18 +127,21 @@ def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
         for j in range(i, max_routes):
             # Realiza o movimento swap
             aux_solution, movement, _ = swap(solution, i, j, nodes=nodes)
-            show_route(aux_solution, nodes)
-            print()
+            # show_route(aux_solution, nodes)
+            # print()
 
             # Calcula a capacidade das novas rotas
             if sum_route_capacity(aux_solution[i], nodes) > capacity or sum_route_capacity(aux_solution[j], nodes) > capacity:
                 continue
             
             # Calcula a distancia das novas rotas
-            dist_aux = dist_sol - route_distance(solution[i], nodes) - route_distance(solution[j], nodes) 
-            print('\ndist: ', dist_aux)
+            if i != j:
+                dist_aux = dist_sol - route_distance(solution[i], nodes) - route_distance(solution[j], nodes) 
+            if i == j:
+                dist_aux = dist_sol - route_distance(solution[i], nodes)
+            # print('\ndist: ', dist_aux, 'sol 1', route_distance(solution[i], nodes), 'sol2', route_distance(solution[j], nodes) )
             dist_aux += route_distance(aux_solution[i], nodes) + route_distance(aux_solution[j], nodes) 
-            print('result dist: ', dist_aux)
+            # print('result dist: ', dist_aux)
 
             # atualiza a solução atual da vizinhança
             if current_sol == None:
@@ -148,10 +151,14 @@ def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
                 if movement not in tabu_list or dist_aux < dist_sol:
                     current_sol = aux_solution.copy()
                     current_dist = dist_aux
+    
     if current_sol != None:
         # TODO tem q verificar o tamanho da lista tabu e o tenure
+        if len(tabu_list) == tenure:
+            tabu_list.pop(0)
         tabu_list.append(movement)
-    return current_sol, current_dist
+
+    return current_sol, current_dist, tabu_list
 
     
 
