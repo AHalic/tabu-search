@@ -22,8 +22,9 @@ def algorithm(file, tenure):
     nodes, vehicles, clients, vehicle_capacity = read_input(file)
 
     sorted_nodes = sort_nodes(nodes)
-
-    best_sol = create_initial_sol(nodes, sorted_nodes, vehicles, vehicle_capacity)
+    distances_between_clients = clients_distance(nodes, clients)
+    best_sol = savings_initial_sol(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.5)
+    #best_sol = random_initial_sol(nodes, sorted_nodes, vehicles, vehicle_capacity)
     # best_sol = copy(best_sol)
     best_sol_dist = total_distance(best_sol, nodes)
     # best_sol_dist = total_distance(best_sol, nodes)
@@ -52,6 +53,7 @@ def algorithm(file, tenure):
             # print(f"current distance: {current_dist}\n")    
 
         fim = time.time()
+        print(tempo)
         tempo = fim - inicio
 
     print('\nBest Solution:')
