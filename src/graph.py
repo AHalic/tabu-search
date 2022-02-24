@@ -39,7 +39,16 @@ def total_distance(routes: List[np.array], nodes: np.array) -> float:
         dist += aux
     
     return dist
-    
+
+def clients_distance(nodes: List[np.array], clients: int) -> np.array:
+    distances = np.zeros((clients, clients),dtype=float)
+
+    for i in range(clients):
+        for j in range(i, clients):
+            distances[i][j] = distance(nodes[i], nodes[j])
+
+    return distances
+
 def get_city(nodes, value):
     # returns city position from nodes list by the value of the index key
     for i, dic in enumerate(nodes):
