@@ -23,8 +23,8 @@ def algorithm(file, tenure):
 
     sorted_nodes = sort_nodes(nodes)
     distances_between_clients = clients_distance(nodes, clients)
-    best_sol = savings_initial_sol(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.5)
-    #best_sol = random_initial_sol(nodes, sorted_nodes, vehicles, vehicle_capacity)
+    # best_sol = savings_initial_sol(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.5)
+    best_sol = random_initial_sol(nodes, sorted_nodes, vehicles, vehicle_capacity)
     # best_sol = copy(best_sol)
     best_sol_dist = total_distance(best_sol, nodes)
     # best_sol_dist = total_distance(best_sol, nodes)
@@ -39,8 +39,9 @@ def algorithm(file, tenure):
     tabu_list = []
     inicio = time.time()
     tempo = 0
+    iter = 0
 
-    while tempo < 50:
+    while tempo < 300 and iter < 1000:
         aux_current_sol, aux_current_dist, tabu_list = best_neighbor(current_sol, current_dist, nodes, vehicles, vehicle_capacity, tabu_list, tenure)
         
         if aux_current_sol != None:
@@ -48,25 +49,30 @@ def algorithm(file, tenure):
             if current_dist < best_sol_dist:
                 best_sol = current_sol.copy()
                 best_sol_dist = current_dist 
+                iter = 0
+            else:
+                iter += 1
 
             # show_route(current_sol, nodes)
             # print(f"current distance: {current_dist}\n")    
 
         fim = time.time()
-        print(tempo)
         tempo = fim - inicio
 
     print('\nBest Solution:')
     show_route(best_sol, nodes)
     print(f"best distance: {best_sol_dist}\n")
+    print('numero de iterações sem melhora:', iter)
 
 if __name__ == '__main__':
     args = sys.argv
 
+    tenure = 15
+
     if len(args) > 1:
-        algorithm(args[1], 15)
+        algorithm(args[1], tenure)
     else:
         print("File not informed")
-        algorithm('input/A-n32-k5.vrp', 8)
+        algorithm('input/A-n32-k5.vrp', tenure)
 
     
