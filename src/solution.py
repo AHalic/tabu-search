@@ -230,8 +230,22 @@ def shift(solution, r_o, r_d, i_c):
     tabu_move = (solution[r_o][i_c])
     return new_solution, tabu_move
 
-
 def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, tenure):
+    current_sol_swap, current_dist_swap, current_move_swap = swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list)
+    current_sol_shift, current_dist_shift, current_move_shift = shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list)
+
+    if current_dist_swap < current_dist_shift:
+        if len(tabu_list) == tenure:
+            tabu_list.pop(0)
+        tabu_list.append(current_move_swap)
+        return current_sol_swap, current_dist_swap, tabu_list
+    else:
+        if len(tabu_list) == tenure:
+            tabu_list.pop(0)
+        tabu_list.append(current_move_shift)
+        return current_sol_shift, current_dist_shift, tabu_list
+
+def swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
     current_sol_swap, current_dist_swap = None, None
     count_swaps = 0
     for i in range(0, max_routes):
@@ -247,29 +261,18 @@ def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, te
                     aux_solution, movement = swap(solution, i, j, i_c1, i_c2, nodes=nodes)
                     # show_route(aux_solution, nodes)
                     # print()
-
-                    # Calcula a capacidade das novas rotas
-                    penalty_r1 = 1
-                    penalty_r2 = 1
-                    capacity_r1 = sum_route_capacity(aux_solution[i], nodes)
-                    capacity_r2 = sum_route_capacity(aux_solution[j], nodes)
-                    
-                    if capacity_r1 > capacity: 
-                        penalty_r1 += (capacity_r1 - capacity) / capacity 
-                    if capacity_r2 > capacity:
-                        penalty_r2 += (capacity_r2 - capacity) / capacity 
-
-
                     
                     # Calcula a distancia das novas rotas
                     if i != j:
-                        dist_aux = dist_sol - route_distance(solution[i], nodes) - route_distance(solution[j], nodes) 
-                        dist_aux += route_distance(aux_solution[i], nodes) * penalty_r1 + route_distance(aux_solution[j], nodes) * penalty_r2
+                        dist_aux = dist_sol - route_distance(solution[i], nodes, capacity) - route_distance(solution[j], nodes, capacity) 
+                        dist_aux += route_distance(aux_solution[i], nodes, capacity) + route_distance(aux_solution[j], nodes, capacity)
                     if i == j:
-                        dist_aux = dist_sol - route_distance(solution[i], nodes)
-                        dist_aux += route_distance(aux_solution[i], nodes) * penalty_r1
+                        dist_aux = dist_sol - route_distance(solution[i], nodes, capacity)
+                        dist_aux += route_distance(aux_solution[i], nodes, capacity)
                     # print('\ndist: ', dist_aux, 'sol 1', route_distance(solution[i], nodes), 'sol2', route_distance(solution[j], nodes) )
                     # print('result dist: ', dist_aux)
+                    # if dist_aux > dist_sol:
+                    #     print('swap dist', dist_aux, 'rotas', i, j, 'capacidades',  capacity_r1, capacity_r2, 'penalidades', penalty_r1, penalty_r2)
 
                     # atualiza a solução atual da vizinhança para a primeira vez que acha 
                     if current_sol_swap == None:
@@ -282,33 +285,31 @@ def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, te
                             current_dist_swap = dist_aux
                             current_move_swap = movement
 
+    return current_sol_swap, current_dist_swap, current_move_swap
 
+
+def shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
     count_shifts = 0
     current_sol_shift, current_dist_shift = None, None
     for i in range(0, max_routes):
         # Não faz shift se a rota só tem um elemento 
         if len(solution[i]) == 1:
             continue
-        for j in range(i + 1, max_routes):
+        for j in range(0, max_routes):
+            if i == j:
+                continue
             for i_c in range(len(solution[i])):
                 count_shifts += 1
 
                 aux_solution, movement = shift(solution, i, j, i_c)
-                    
-
-                penalty_r1 = 1
-                penalty_r2 = 1
-                capacity_r1 = sum_route_capacity(aux_solution[i], nodes)
-                capacity_r2 = sum_route_capacity(aux_solution[j], nodes)
-                
-                if capacity_r1 > capacity: 
-                    penalty_r1 += (capacity_r1 - capacity) / capacity 
-                if capacity_r2 > capacity:
-                    penalty_r2 += (capacity_r2 - capacity) / capacity 
+                # print('rotas', solution[i], solution[j], 'novas', aux_solution[i], aux_solution[j])
 
                 # Calcula a distancia das novas rotas
-                dist_aux = dist_sol - route_distance(solution[i], nodes) - route_distance(solution[j], nodes) 
-                dist_aux += route_distance(aux_solution[i], nodes) *penalty_r1 + route_distance(aux_solution[j], nodes) * penalty_r2
+                dist_aux = dist_sol - route_distance(solution[i], nodes, capacity) - route_distance(solution[j], nodes, capacity) 
+                dist_aux += route_distance(aux_solution[i], nodes, capacity) + route_distance(aux_solution[j], nodes, capacity)
+                
+                # if dist_aux > dist_sol:
+                # print('shift dist', dist_aux, 'capacidades', capacity_r1, capacity_r2, 'penalidades', penalty_r1, penalty_r2, '\n')
 
                 # atualiza a solução atual da vizinhança
                 if current_sol_shift == None:
@@ -321,22 +322,7 @@ def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, te
                         current_dist_shift = dist_aux
                         current_move_shift = movement
 
-    # print('shift')
-    # print(current_sol_shift, current_dist_shift)
-    # print('swap')
-    # print(current_sol_swap, current_dist_swap)
-
-    if current_dist_swap < current_dist_shift:
-        if len(tabu_list) == tenure:
-            tabu_list.pop(0)
-        tabu_list.append(current_move_swap)
-        return current_sol_swap, current_dist_swap, tabu_list
-    else:
-        if len(tabu_list) == tenure:
-            tabu_list.pop(0)
-        tabu_list.append(current_move_shift)
-        return current_sol_shift, current_dist_shift, tabu_list
-        
+    return current_sol_shift, current_dist_shift, current_move_shift
 
 
     
