@@ -9,30 +9,30 @@ from read_input import *
 from solution import *
 from graph import *
 
-def show_route(sol: List[np.array], nodes:np.array) -> None:
+def show_route(sol: List[np.array], nodes:np.array, capacity:int) -> None:
     dist = 0
     for i, route in enumerate(sol):
         route = route.flatten()
         print(f'Route #{i+1} - ', end="")
         print(*route.astype(int), sep=" ")
         print(f'Capacity: {sum_route_capacity(route, nodes)}', end='\n')
-        print(f'Total Distance: {route_distance(route, nodes)}')
+        print(f'Total Distance: {route_distance(route, nodes, capacity)}')
 
 def algorithm(file, tenure):
     nodes, vehicles, clients, vehicle_capacity = read_input(file)
 
     sorted_nodes = sort_nodes(nodes)
     distances_between_clients = clients_distance(nodes, clients)
-    # best_sol = savings_initial_sol(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.5)
-    best_sol = random_initial_sol(nodes, sorted_nodes, vehicles, vehicle_capacity)
+    best_sol = savings_initial_sol(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.5)
+    # best_sol = random_initial_sol(nodes, sorted_nodes, vehicles, vehicle_capacity)
     # best_sol = copy(best_sol)
-    best_sol_dist = total_distance(best_sol, nodes)
+    best_sol_dist = total_distance(best_sol, nodes, vehicle_capacity)
     # best_sol_dist = total_distance(best_sol, nodes)
 
     current_sol = best_sol.copy()
     current_dist = best_sol_dist
 
-    show_route(best_sol, nodes)
+    show_route(best_sol, nodes, vehicle_capacity)
     print(f"best distance: {best_sol_dist}\n")
     #swap(best_sol, best_sol_dist, nodes)
     
@@ -60,7 +60,7 @@ def algorithm(file, tenure):
         tempo = fim - inicio
 
     print('\nBest Solution:')
-    show_route(best_sol, nodes)
+    show_route(best_sol, nodes, vehicle_capacity)
     print(f"best distance: {best_sol_dist}\n")
     print('numero de iterações sem melhora:', iter)
 
