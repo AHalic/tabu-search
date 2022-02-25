@@ -221,7 +221,11 @@ def swap(solution, i_r1=-1, i_r2=-1, i_c1=-1, i_c2=-1, nodes=None):
     
 def shift(solution, r_o, r_d, i_c):
     new_solution = [np.copy(route) for route in solution]
+    # print(new_solution[r_d], new_solution[r_o])
+
     new_solution[r_d] = np.concatenate((solution[r_d], solution[r_o][i_c]),axis=None)
+    # print(new_solution[r_d], new_solution[r_o])
+    
     new_solution[r_o] = np.delete(new_solution[r_o], i_c, axis=None)
     tabu_move = (solution[r_o][i_c])
     return new_solution, tabu_move
@@ -289,7 +293,7 @@ def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, te
             for i_c in range(len(solution[i])):
                 count_shifts += 1
 
-                aux_solution, movement = shift(solution, i, j, i_c1)
+                aux_solution, movement = shift(solution, i, j, i_c)
                     
 
                 penalty_r1 = 1
