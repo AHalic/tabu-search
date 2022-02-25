@@ -24,18 +24,24 @@ def get_route(value: int, routes: List[np.array]):
         if value in route:
             return i
 
-def route_distance(route: np.array, nodes: np.array) -> float:
+def route_distance(route: np.array, nodes: np.array, capacity: int) -> float:
     aux = distance(nodes[0], nodes[route[0]])
     for i in range(len(route) - 1): 
         aux += distance(nodes[route[i]], nodes[route[i+1]])
 
     aux += distance(nodes[0], nodes[route[-1]])
-    return aux
 
-def total_distance(routes: List[np.array], nodes: np.array) -> float:
+    capacity_r = sum_route_capacity(route, nodes)
+    penalty = 1
+    if capacity_r > capacity: 
+        penalty += (capacity_r - capacity) / capacity 
+
+    return aux * penalty
+
+def total_distance(routes: List[np.array], nodes: np.array, capacity: int) -> float:
     dist = 0
     for i in range(len(routes)):
-        aux = route_distance(routes[i], nodes)
+        aux = route_distance(routes[i], nodes, capacity) 
         dist += aux
     
     return dist
