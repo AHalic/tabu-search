@@ -47,28 +47,6 @@ def calculate_savings(nodes: List[dict], dist: np.array, clients: int) -> List[d
     
     return best_savings
 
-"""
-(8, 11)
-
-8 2 3 1
-11 5 6 7
-1 3 2 8 11 5 6 7
-
-8 2 3 1
-7 5 6 11
-7 5 6 11 8 2 3 1
-
-1 2 3 8
-7 5 6 11
-1 2 3 8 11 6 5 7
-
-1 2 3 8
-11 5 6 7
-1 2 3 8 11 5 6 7
-
-"""
-
-
 def join_route(route1, route2, value1, value2):
     """
     Une rotas quando os valores se encontram no inicio ou no fim das listas.
@@ -111,7 +89,6 @@ def savings_initial_sol(dist: np.array, nodes:  List[dict], vehicles: int, clien
     solution = create_n_routes(clients)
 
     # Junta rotas ate quantidade de rotas == veiculos. Permite penalidade
-    savings_penalty = []
     while len(solution) > vehicles:
         # Tupla de economia, com o valor da economia e as cidades que pertence
         saving_tuple = best_savings.pop(0)
@@ -264,12 +241,20 @@ def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, te
     #     print('dei else')
     #     return current_sol_shift, current_dist_shift, tabu_list, current_flag_shift
 
+def check_feasibility(solution, nodes, limit):
+    capacity = 0
+    for i, route in enumerate(solution):
+        route = route.flatten()
+        capacity += sum_route_capacity(route, nodes)
+    
+    return capacity <= limit
 
 def swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best_sol, current_flag):
     current_sol_swap, current_dist_swap = None, None
     count_swaps = 0
     flag_r1, flag_r2 = False, False
-
+    
+    solution_is_feasable = check_feasibility(solution, nodes, capacity)
     for i in range(0, max_routes):
         # print(int(ceil(len(solution[i]) / 2)))
         c1_indexes = random.sample(range(len(solution[i])), k=int(ceil(len(solution[i]) / 2)))
@@ -281,19 +266,14 @@ def swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best_
                 for i_c2 in range(len(solution[j])):
                     count_swaps += 1
                     aux_solution, movement = swap(solution, i, j, i_c1, i_c2, nodes=nodes)
-                    
+                    aux_solution_feasable = check_feasibility(aux_solution, nodes, capacity)
                     # Calcula a distancia das novas rotas
                     dist_aux, flag = total_distance(aux_solution, nodes, capacity)
-                    # if i != j:
-                    #     r1, flag_r1 =  route_distance(aux_solution[i], nodes, capacity)
-                    #     r2, flag_r2 =  route_distance(aux_solution[j], nodes, capacity)
-                    #     dist_aux = dist_sol - route_distance(solution[i], nodes, capacity)[0] - route_distance(solution[j], nodes, capacity)[0]
-                    #     dist_aux += r1 + r2
-                    # if i == j:
-                    #     r1, flag_r1 = route_distance(aux_solution[i], nodes, capacity)
-                    #     flag_r2 = flag_r1
-                    #     dist_aux = dist_sol - route_distance(solution[i], nodes, capacity)[0]
-                    #     dist_aux += r1
+                            
+                    if solution_is_feasable and sum_route_capacity(aux_solution[i], nodes) > capacity or sum_route_capacity(aux_solution[j], nodes) > capacity:
+                        continue
+                    elif aux_solution_feasable:
+                        solution_is_feasable = True
 
                     if current_flag and not flag:
                         # se a solução atual é feasible, não são aceitas solução infeasible
@@ -325,6 +305,7 @@ def shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best
     count_shifts = 0
     current_sol_shift, current_dist_shift = None, None
     flag_r1, flag_r2 = False, False
+    solution_is_feasable = check_feasibility(solution, nodes, capacity)
 
     for i in range(0, max_routes):
         # Não faz shift se a rota só tem um elemento 
@@ -336,7 +317,9 @@ def shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best
             for i_c in range(len(solution[i])):
                 count_shifts += 1
 
-                aux_solution, movement = shift(solution, i, j, i_c)
+                aux_solution, movement = shift(solution, i, j, i_c)                    
+                aux_solution_feasable = check_feasibility(aux_solution, nodes, capacity)
+
                 # print('rotas', solution[i], solution[j], 'novas', aux_solution[i], aux_solution[j])
 
                 # Calcula a distancia das novas rotas
@@ -345,7 +328,12 @@ def shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best
                 # dist_aux = dist_sol - route_distance(solution[i], nodes, capacity)[0] - route_distance(solution[j], nodes, capacity)[0]
                 # dist_aux += r1 + r2
                 dist_aux, flag = total_distance(aux_solution, nodes, capacity)
-                
+
+                if solution_is_feasable and sum_route_capacity(aux_solution[i], nodes) > capacity or sum_route_capacity(aux_solution[j], nodes) > capacity:
+                        continue
+                elif aux_solution_feasable:
+                    solution_is_feasable = True
+
                 if current_flag and not flag:
                     # se a solução atual é feasible, não são aceitas solução infeasible
                     continue
