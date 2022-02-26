@@ -17,7 +17,7 @@ def sort_nodes(nodes:np.array) -> np.array:
     return sorted(nodes, key=lambda item: item["capacity"], reverse=True)
 
 def distance(node1: dict, node2:dict) -> float:
-    return ((node1['x'] - node2['x'])**2 + (node1['y'] - node2['y'])**2)**1/2
+    return ((node1['x'] - node2['x'])**2 + (node1['y'] - node2['y'])**2)**(1/2)
 
 def get_route(value: int, routes: List[np.array]):
     for i, route in enumerate(routes):
@@ -72,4 +72,4 @@ def city_capacity(nodes, index):
 
 def sum_route_capacity(route, nodes):
     # sum all of city's capacity in route array
-    return sum([city_capacity(nodes, city) for city in route])
+    return sum([nodes[int(city)]['capacity'] for city in route])
