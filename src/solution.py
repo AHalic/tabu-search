@@ -1,8 +1,10 @@
+from dis import dis
 from typing import List, Tuple
 
 import numpy as np
 import random
 from math import ceil 
+from main import show_route
 
 from graph import sum_route_capacity, route_distance, total_distance
 
@@ -230,24 +232,44 @@ def shift(solution, r_o, r_d, i_c):
     tabu_move = (solution[r_o][i_c])
     return new_solution, tabu_move
 
-def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, tenure):
-    current_sol_swap, current_dist_swap, current_move_swap = swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list)
-    current_sol_shift, current_dist_shift, current_move_shift = shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list)
+def best_neighbor(solution, dist_sol, nodes, max_routes, capacity, tabu_list, tenure, best_sol, current_flag):
+    current_sol_swap, current_dist_swap, current_move_swap, current_flag_swap = swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best_sol, current_flag)
+    current_sol_shift, current_dist_shift, current_move_shift, current_flag_shift = shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best_sol, current_flag)
 
-    if current_dist_swap < current_dist_shift:
+    print('swap', current_dist_swap, current_move_swap, current_flag_swap)
+    show_route(current_sol_swap, nodes, capacity)
+
+    print('\nshift', current_dist_shift, current_move_shift, current_flag_shift)
+    show_route(current_sol_shift, nodes, capacity)
+    """
+    F F e r1 < r2 -> r1
+    F V e r1 < r2 -> r2
+    V F e r1 < r2 -> r1
+    V V e r1 < r2 -> r1
+    """
+    # (a and not b) or (a and c) or (not b and c)
+    if (current_flag_swap and not current_flag_shift) or (current_flag_swap and  current_dist_swap <= current_dist_shift) or (not current_flag_shift and  current_dist_swap <= current_dist_shift):
         if len(tabu_list) == tenure:
             tabu_list.pop(0)
         tabu_list.append(current_move_swap)
-        return current_sol_swap, current_dist_swap, tabu_list
+
+        return current_sol_swap, current_dist_swap, tabu_list, current_flag_swap
     else:
         if len(tabu_list) == tenure:
             tabu_list.pop(0)
         tabu_list.append(current_move_shift)
-        return current_sol_shift, current_dist_shift, tabu_list
 
-def swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
+        return current_sol_shift, current_dist_shift, tabu_list, current_flag_shift
+    # else:
+    #     print('dei else')
+    #     return current_sol_shift, current_dist_shift, tabu_list, current_flag_shift
+
+
+def swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best_sol, current_flag):
     current_sol_swap, current_dist_swap = None, None
     count_swaps = 0
+    flag_r1, flag_r2 = False, False
+
     for i in range(0, max_routes):
         # print(int(ceil(len(solution[i]) / 2)))
         c1_indexes = random.sample(range(len(solution[i])), k=int(ceil(len(solution[i]) / 2)))
@@ -259,20 +281,22 @@ def swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
                 for i_c2 in range(len(solution[j])):
                     count_swaps += 1
                     aux_solution, movement = swap(solution, i, j, i_c1, i_c2, nodes=nodes)
-                    # show_route(aux_solution, nodes)
-                    # print()
                     
                     # Calcula a distancia das novas rotas
                     if i != j:
-                        dist_aux = dist_sol - route_distance(solution[i], nodes, capacity) - route_distance(solution[j], nodes, capacity) 
-                        dist_aux += route_distance(aux_solution[i], nodes, capacity) + route_distance(aux_solution[j], nodes, capacity)
+                        r1, flag_r1 =  route_distance(aux_solution[i], nodes, capacity)
+                        r2, flag_r2 =  route_distance(aux_solution[j], nodes, capacity)
+                        dist_aux = dist_sol - route_distance(solution[i], nodes, capacity)[0] - route_distance(solution[j], nodes, capacity)[0]
+                        dist_aux += r1 + r2
                     if i == j:
-                        dist_aux = dist_sol - route_distance(solution[i], nodes, capacity)
-                        dist_aux += route_distance(aux_solution[i], nodes, capacity)
-                    # print('\ndist: ', dist_aux, 'sol 1', route_distance(solution[i], nodes), 'sol2', route_distance(solution[j], nodes) )
-                    # print('result dist: ', dist_aux)
-                    # if dist_aux > dist_sol:
-                    #     print('swap dist', dist_aux, 'rotas', i, j, 'capacidades',  capacity_r1, capacity_r2, 'penalidades', penalty_r1, penalty_r2)
+                        r1, flag_r1 = route_distance(aux_solution[i], nodes, capacity)
+                        flag_r2 = flag_r1
+                        dist_aux = dist_sol - route_distance(solution[i], nodes, capacity)[0]
+                        dist_aux += r1
+
+                    if current_flag and (not flag_r1 or not flag_r2):
+                        # se a solução atual é feasible, não são aceitas solução infeasible
+                        continue
 
                     # atualiza a solução atual da vizinhança para a primeira vez que acha 
                     if current_sol_swap == None:
@@ -280,17 +304,26 @@ def swap_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
                         current_dist_swap = dist_aux
                         current_move_swap = movement
                     elif dist_aux < current_dist_swap:
-                        if movement not in tabu_list or dist_aux < dist_sol:
+                        if movement not in tabu_list or dist_aux < best_sol:
                             current_sol_swap = aux_solution.copy()
                             current_dist_swap = dist_aux
                             current_move_swap = movement
+                            current_flag = bool(flag_r1 * flag_r2)
+                    elif dist_aux > current_dist_swap and dist_aux < dist_sol and (flag_r1*flag_r2):
+                            current_sol_swap = aux_solution.copy()
+                            current_dist_swap = dist_aux
+                            current_move_swap = movement
+                            current_flag = bool(flag_r1 * flag_r2)
 
-    return current_sol_swap, current_dist_swap, current_move_swap
+
+    return current_sol_swap, current_dist_swap, current_move_swap, current_flag
 
 
-def shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
+def shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list, best_sol, current_flag):
     count_shifts = 0
     current_sol_shift, current_dist_shift = None, None
+    flag_r1, flag_r2 = False, False
+
     for i in range(0, max_routes):
         # Não faz shift se a rota só tem um elemento 
         if len(solution[i]) == 1:
@@ -305,11 +338,14 @@ def shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
                 # print('rotas', solution[i], solution[j], 'novas', aux_solution[i], aux_solution[j])
 
                 # Calcula a distancia das novas rotas
-                dist_aux = dist_sol - route_distance(solution[i], nodes, capacity) - route_distance(solution[j], nodes, capacity) 
-                dist_aux += route_distance(aux_solution[i], nodes, capacity) + route_distance(aux_solution[j], nodes, capacity)
+                r1, flag_r1 =  route_distance(aux_solution[i], nodes, capacity)
+                r2, flag_r2 =  route_distance(aux_solution[j], nodes, capacity)
+                dist_aux = dist_sol - route_distance(solution[i], nodes, capacity)[0] - route_distance(solution[j], nodes, capacity)[0]
+                dist_aux += r1 + r2
                 
-                # if dist_aux > dist_sol:
-                # print('shift dist', dist_aux, 'capacidades', capacity_r1, capacity_r2, 'penalidades', penalty_r1, penalty_r2, '\n')
+                if current_flag and (not flag_r1 or not flag_r2):
+                    # se a solução atual é feasible, não são aceitas solução infeasible
+                    continue
 
                 # atualiza a solução atual da vizinhança
                 if current_sol_shift == None:
@@ -317,12 +353,23 @@ def shift_moves(solution, dist_sol, nodes, max_routes, capacity, tabu_list):
                     current_dist_shift = dist_aux
                     current_move_shift = movement
                 elif dist_aux < current_dist_shift:
-                    if movement not in tabu_list or dist_aux < dist_sol:
+                    if movement not in tabu_list or dist_aux < best_sol:
                         current_sol_shift = aux_solution.copy()
                         current_dist_shift = dist_aux
                         current_move_shift = movement
+                        current_flag = bool(flag_r1 * flag_r2)
+                        print('entrei no if do shift', flag_r1, flag_r2, current_flag)
+                        print(sum_route_capacity(current_sol_shift[i], nodes), sum_route_capacity(current_sol_shift[j], nodes))
+                elif dist_aux > current_dist_shift and dist_aux < dist_sol and (flag_r1*flag_r2):
+                        current_sol_shift = aux_solution.copy()
+                        current_dist_shift = dist_aux
+                        current_move_shift = movement
+                        current_flag = bool(flag_r1 * flag_r2)
+                        print('entrei no elif do shift', flag_r1, flag_r2, current_flag)
+                        print(sum_route_capacity(current_sol_shift[i], nodes), sum_route_capacity(current_sol_shift[j], nodes))
 
-    return current_sol_shift, current_dist_shift, current_move_shift
+    print(current_flag, '\n')
+    return current_sol_shift, current_dist_shift, current_move_shift, current_flag
 
 
     
