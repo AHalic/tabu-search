@@ -25,6 +25,7 @@ def get_route(value: int, routes: List[np.array]):
             return i
 
 def route_distance(route: np.array, nodes: np.array, capacity: int) -> float:
+    flag = True
     aux = distance(nodes[0], nodes[route[0]])
     for i in range(len(route) - 1): 
         aux += distance(nodes[route[i]], nodes[route[i+1]])
@@ -34,17 +35,20 @@ def route_distance(route: np.array, nodes: np.array, capacity: int) -> float:
     capacity_r = sum_route_capacity(route, nodes)
     penalty = 1
     if capacity_r > capacity: 
+        flag = False
         penalty += (capacity_r - capacity) / capacity 
 
-    return aux * penalty
+    return aux * penalty, flag
 
 def total_distance(routes: List[np.array], nodes: np.array, capacity: int) -> float:
     dist = 0
+    flag = True
     for i in range(len(routes)):
-        aux = route_distance(routes[i], nodes, capacity) 
+        aux, flag_r = route_distance(routes[i], nodes, capacity) 
+        flag = bool(flag*flag_r)
         dist += aux
     
-    return dist
+    return dist, flag
 
 def clients_distance(nodes: List[np.array], clients: int) -> np.array:
     distances = np.zeros((clients, clients),dtype=float)
