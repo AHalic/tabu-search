@@ -4,12 +4,13 @@ import numpy as np
 
 from graph import sum_route_capacity
 from utils import sort_with_key
+from moves import shift
 
-def create_n_routes(clients: int) -> List[np.array]:
+def create_n_routes(nodes: List[dict], clients: int) -> List[np.array]:
     """
     Cria lista de arrays em que cada array possui apenas o valor da cidade.
     """
-    return [np.array([i]) for i in range(1, clients)]
+    return [{"route": np.array([i]), "capacity": nodes[i]['capacity']} for i in range(1, clients)]
 
 def calculate_savings(nodes: List[dict], dist: np.array, clients: int) -> List[dict]:
     """
@@ -73,7 +74,7 @@ def savings_initial_sol(dist: np.array, nodes:  List[dict], vehicles: int, clien
     best_savings = sort_with_key(best_savings, 'saving')
 
     # Cria n rotas, com n = clients
-    solution = create_n_routes(clients)
+    solution = create_n_routes(nodes, clients)
 
     # Junta rotas ate quantidade de rotas == veiculos. Permite penalidade
     while len(solution) > vehicles and len(best_savings) > 0:
@@ -91,7 +92,7 @@ def savings_initial_sol(dist: np.array, nodes:  List[dict], vehicles: int, clien
         # Procura rotas que tem cidade i e j
         index = 0
         while index < len(solution) and not (route_i and route_j):
-            route = solution[index]
+            route = solution[index]['route']
             if i in route:
                 route_i = (route, index)
             if j in route:
@@ -101,12 +102,14 @@ def savings_initial_sol(dist: np.array, nodes:  List[dict], vehicles: int, clien
         # Caso em que cidades i e j estao na mesma rota
         if route_i[1] == route_j[1]:
             continue
-
+        
         # Une cidades
         route = join_route(route_i[0], route_j[0], i, j)
 
+        aux_capacity = sum_route_capacity(route, nodes)
+
         # A rota unida esta vazia ou ultrapassou penalidade% da capacidade
-        if not len(route) or sum_route_capacity(route, nodes) > (limit * (1 + penalidade)):
+        if not len(route) or aux_capacity > (limit * (1 + penalidade)):
             continue
         
         # Retira rota das solucoes e dps adiciona de novo
@@ -117,13 +120,37 @@ def savings_initial_sol(dist: np.array, nodes:  List[dict], vehicles: int, clien
             solution.pop(route_j[1])
             solution.pop(route_i[1])
 
-        solution.append(route)
+        solution.append({'route': route, 'capacity': aux_capacity})
 
     return solution
 
+def check_free_space(limit: int, solution: List[dict]) -> int:
+    max_free_space = limit - solution[0]['capacity']
+    for route in solution[1:]:
+        aux_max = limit - route['capacity']
+
+        if aux_max > max_free_space:
+            max_free_space = aux_max
+
+    return max_free_space
+
 def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, clients: int, limit:int, penalidade:float=0.2) -> List[np.array]:
     savings_solution = savings_initial_sol(distances, nodes, vehicles, clients, limit, penalidade)
+    savings_solution_sorted = sort_with_key(savings_solution, 'capacity')
+    
+    new_solution = [np.array(route['route']) for route in savings_solution_sorted]
+    
+    
+    print(shift(new_solution, 0, 1, -1))
 
+    for route in savings_solution_sorted:
+        # max_free_space = check_free_space(limit, )
+        # free_space 
+        pass
+
+
+
+    
     # ordenar por capacidade
 
     # achar maior espaco livre
@@ -131,6 +158,7 @@ def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, cl
     # loop
     # pegar do inicio ou do fim, se for menor que o maior espaco livre
     # atualizar maior espaco livre    
+    return new_solution
     
 
 def random_initial_sol(nodes: List[dict], vehicles:int, limit:int) -> List[np.array]:

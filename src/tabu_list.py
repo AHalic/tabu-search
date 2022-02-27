@@ -10,13 +10,16 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
     Aplica o algoritmo de tabu list utilizando ou uma solucao inicial aleatoria ou uma solucao utilizando o metodo de
     Clarke Wright de economia. 
     """
+    inicio = time.time()
 
     # Cria matriz de distancia entre as cidades
     distances_between_clients = clients_distance(nodes, clients)
+    corrected_savings(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.1)
+    quit()
 
     # Escolhe a solucao inicial
     if savings:
-        best_sol = savings_initial_sol(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.1)
+        best_sol = corrected_savings(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.1)
     else:
         best_sol = random_initial_sol(nodes, vehicles, vehicle_capacity)
     
@@ -32,7 +35,6 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
     
     # Inicializa lista tabu e condicoes de parada
     tabu_list = []
-    inicio = time.time()
     tempo = 0
     iter = 0
 
