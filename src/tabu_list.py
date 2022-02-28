@@ -14,8 +14,6 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
 
     # Cria matriz de distancia entre as cidades
     distances_between_clients = clients_distance(nodes, clients)
-    corrected_savings(distances_between_clients, nodes, vehicles, clients, vehicle_capacity, 0.1)
-    quit()
 
     # Escolhe a solucao inicial
     if savings:
