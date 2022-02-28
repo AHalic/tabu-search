@@ -5,7 +5,7 @@ from initial_solution import *
 from local_search import *
 from graph import *
 
-def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: int, tenure: int, savings:bool=True) -> None:
+def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: int, tenure: int, iter_max:int=1000, savings:bool=True) -> None:
     """
     Aplica o algoritmo de tabu list utilizando ou uma solucao inicial aleatoria ou uma solucao utilizando o metodo de
     Clarke Wright de economia. 
@@ -36,7 +36,7 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
     tempo = 0
     iter = 0
 
-    while tempo < 300 and iter < 1000:
+    while tempo < 300 and iter < iter_max:
         aux_current_sol, aux_current_dist, tabu_list, aux_current_feasible_flag = best_neighbor(distances_between_clients, current_sol, current_dist, nodes, vehicles, vehicle_capacity, tabu_list, tenure, best_sol_dist, current_feasible_flag)
         
         if aux_current_sol != None:
