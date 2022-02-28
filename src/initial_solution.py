@@ -134,30 +134,92 @@ def check_free_space(limit: int, solution: List[dict]) -> int:
 
     return max_free_space
 
+def find_city_less_capacity(nodes: List[dict], route: dict, max_free_space: int) -> int:
+
+    for i, city in enumerate(route['route']):
+        if nodes[city]['capacity'] <= max_free_space:
+            return i
+
+    return -1
+
 def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, clients: int, limit:int, penalidade:float=0.2) -> List[np.array]:
+    # Cria solucao de savings e a ordena
     savings_solution = savings_initial_sol(distances, nodes, vehicles, clients, limit, penalidade)
-    savings_solution_sorted = sort_with_key(savings_solution, 'capacity')
-    
+    savings_solution_sorted = sort_with_key(savings_solution, 'capacity')  
     new_solution = [np.array(route['route']) for route in savings_solution_sorted]
     
+    # Se a primeira rota ultrapassa em limite, a solucao nao eh feasible
+    if savings_solution_sorted[0]['capacity'] > limit:
+        index = 0
+
+        # Contador de indices de rotas que estao feasible
+        index_count = set()
+
+        while True:
+            max_free_space = check_free_space(limit, savings_solution_sorted)
+
+            # Se verificou todas as rotas, voltar para o inicio
+            if index == vehicles:
+                index = 0
+            
+            # Se todas as rotas que contou sao feasibles
+            if len(index_count) == vehicles:
+                break
+            
+            # Se a rota atual eh feasible, atualiza o contador e o indice
+            elif savings_solution_sorted[index]['capacity'] <= limit:
+                index_count.add(index)
+                index += 1
+                continue                
+            
+            route_origin = savings_solution_sorted[index]
     
-    print(shift(new_solution, 0, 1, -1))
+            # Escolhe qual cidade vai retirar da rota
+            if nodes[route_origin['route'][-1]]['capacity'] <= max_free_space:
+                city = -1
+            elif nodes[route_origin['route'][0]]['capacity'] <= max_free_space:
+                city = 0            
+            else:
+                city = find_city_less_capacity(nodes, route_origin, max_free_space)
+                if city == -1:
+                    print("Não tem rota com capacidade")
+                    quit()
 
-    for route in savings_solution_sorted:
-        # max_free_space = check_free_space(limit, )
-        # free_space 
-        pass
+            aux_index = 0
 
+            # Pega informacoes da cidade que vai ser modificada
+            city_number = route_origin['route'][city]
+            city_origin_capacity = nodes[city_number]['capacity']
 
+            # Procura uma rota para adicionar
+            while aux_index < vehicles:
+                
+                route_destiny = savings_solution_sorted[aux_index]
 
-    
-    # ordenar por capacidade
+                # Se a capacidade da cidade passa do limite
+                if route_destiny['capacity'] > limit:
+                    aux_index += 1
+                    continue
+                # Se a diferenca de limite e da capacidade for suficiente para adicionar a cidade
+                elif limit - route_destiny['capacity'] >= city_origin_capacity:
+                    # Atualiza origem e destino
+                    route_destiny['route'] = np.concatenate((route_destiny['route'], city_number), axis=None)
+                    route_origin['route'] = np.delete(route_origin['route'], city, axis=None)
 
-    # achar maior espaco livre
+                    route_destiny['capacity'] = sum_route_capacity(route_destiny['route'], nodes)
+                    route_origin['capacity'] = sum_route_capacity(route_origin['route'], nodes)
 
-    # loop
-    # pegar do inicio ou do fim, se for menor que o maior espaco livre
-    # atualizar maior espaco livre    
+                    savings_solution_sorted[aux_index] = route_destiny
+                    savings_solution_sorted[index] = route_origin
+
+                    # Atualiza nova solucao
+                    new_solution, _ = shift(new_solution, index, aux_index, city)
+                    break
+                else:
+                    aux_index += 1
+                    
+            index += 1
+
     return new_solution
     
 
