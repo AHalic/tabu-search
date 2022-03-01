@@ -98,20 +98,27 @@ def sum_route_capacity(route: np.array, nodes: List[dict]) -> float:
     return sum([nodes[int(city)]['capacity'] for city in route])
 
 
-def show_routes(distances:np.array, sol: List[np.array], nodes:np.array, capacity:int) -> None:
+def show_routes(distances:np.array, sol: List[np.array], nodes:np.array, capacity:int, file_writer) -> None:
     """
     Mostra rotas dado uma solucao e sua capacidade e distancia.s
     """
     dist = 0
     for i, route in enumerate(sol):
         # Mostra rota
-        route = route.flatten()
-        print(f'Rota #{i+1} - ', end="")
-        print(*route.astype(int), sep=" ")
+        route_aux = route.flatten()
+        file_writer.write(f'Rota #{i+1} - ')
 
+        route_city = ""
+        for route_i in route_aux.astype(int):
+
+            route_city += f"{route_i} "
+
+        file_writer.write(f'{route_city}\n')
         # Mostra capacidade
-        print(f'Capacidade: {sum_route_capacity(route, nodes)}', end='\n')
+
+        file_writer.write(f'Capacidade: {sum_route_capacity(route, nodes)}\n')
 
         # Mostra distancia
         dist, _ = route_distance(distances, route, nodes, capacity)
-        print(f'Distancia da rota: {dist}', end='\n')
+        file_writer.write(f'Distancia da rota: {dist}\n')
+    file_writer.write('\n')

@@ -5,7 +5,7 @@ from initial_solution import *
 from local_search import *
 from graph import *
 
-def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: int, tenure: int, iter_max:int=1000, savings:bool=True) -> None:
+def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: int, tenure: int, file_writer, iter_max:int=1000, savings:bool=True) -> None:
     """
     Aplica o algoritmo de tabu list utilizando ou uma solucao inicial aleatoria ou uma solucao utilizando o metodo de
     Clarke Wright de economia. 
@@ -29,9 +29,9 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
     
     # Mostra a rota inicial e a distancia
 
-    print('-Solução inicial-\n')
-    show_routes(distances_between_clients, best_sol, nodes, vehicle_capacity)
-    print(f"Distancia total: {best_sol_dist}\n")
+    file_writer.write('-Solucao inicial-\n')
+    show_routes(distances_between_clients, best_sol, nodes, vehicle_capacity, file_writer)
+    file_writer.write(f"Distancia total: {best_sol_dist}\n\n")
     
     # Inicializa lista tabu e condicoes de parada
     tabu_list = []
@@ -56,7 +56,7 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
         fim = time.time()
         tempo = fim - inicio
 
-    print('-Solução final-\n')
-    show_routes(distances_between_clients, best_sol, nodes, vehicle_capacity)
+    file_writer.write('-Solucao final-\n')
+    show_routes(distances_between_clients, best_sol, nodes, vehicle_capacity, file_writer)
 
     return tempo, iter_, best_sol_dist
