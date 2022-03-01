@@ -28,15 +28,17 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
     current_feasible_flag = best_feasible_flag
     
     # Mostra a rota inicial e a distancia
+
+    print('-Solução inicial-\n')
     show_routes(distances_between_clients, best_sol, nodes, vehicle_capacity)
-    print(f"Distancia: {best_sol_dist}\n")
+    print(f"Distancia total: {best_sol_dist}\n")
     
     # Inicializa lista tabu e condicoes de parada
     tabu_list = []
     tempo = 0
-    iter = 0
+    iter_ = 0
 
-    while tempo < 300 and iter < iter_max:
+    while tempo < 300 and iter_ < iter_max:
         aux_current_sol, aux_current_dist, tabu_list, aux_current_feasible_flag = best_neighbor(distances_between_clients, current_sol, current_dist, nodes, vehicles, vehicle_capacity, tabu_list, tenure, best_sol_dist, current_feasible_flag)
         
         if aux_current_sol != None:
@@ -46,18 +48,15 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
                 best_sol = current_sol.copy()
                 best_sol_dist = current_dist 
                 best_feasible_flag = current_feasible_flag
-                iter = 0
+                iter_ = 0
             else:
-                iter += 1
+                iter_ += 1
 
 
         fim = time.time()
         tempo = fim - inicio
 
-    print("", "*"*20, sep='\n', end='\n\n\n')
-    
+    print('-Solução final-\n')
     show_routes(distances_between_clients, best_sol, nodes, vehicle_capacity)
-    print(f"Distancia: {best_sol_dist}", end='\n\n')
 
-    print('Numero de iterações sem melhora:', iter)
-    print('Tempo de execucao do algoritmo:', tempo)
+    return tempo, iter_, best_sol_dist

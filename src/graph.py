@@ -106,12 +106,12 @@ def show_routes(distances:np.array, sol: List[np.array], nodes:np.array, capacit
     for i, route in enumerate(sol):
         # Mostra rota
         route = route.flatten()
-        print(f'Route #{i+1} - ', end="")
+        print(f'Rota #{i+1} - ', end="")
         print(*route.astype(int), sep=" ")
 
         # Mostra capacidade
-        print(f'Capacity: {sum_route_capacity(route, nodes)}', end='\n')
+        print(f'Capacidade: {sum_route_capacity(route, nodes)}', end='\n')
 
         # Mostra distancia
         dist, _ = route_distance(distances, route, nodes, capacity)
-        print(f'Total Distance: {dist}')
+        print(f'Distancia da rota: {dist}', end='\n')
