@@ -78,7 +78,7 @@ def swap_loop(
                     dist_aux, feasible_flag = total_distance(distances, aux_solution, nodes, capacity)
 
 
-                    if current_feasible_flag and not feasible_flag:
+                    if not feasible_flag:
                         # se a solução atual é feasible, não são aceitas soluções infeasible
                         continue
 
@@ -96,13 +96,7 @@ def swap_loop(
                             current_dist_swap = dist_aux
                             current_move_swap = movement
                             current_feasible_flag = feasible_flag
-                    # caso em q a distancia é maior que a atual da vizinhança, menor que a solução atua e fazivel 
-                    # TODO não esta tendo aspiração
-                    elif dist_aux > current_dist_swap and dist_aux < dist_sol and feasible_flag:
-                            current_sol_swap = aux_solution.copy()
-                            current_dist_swap = dist_aux
-                            current_move_swap = movement
-                            current_feasible_flag = feasible_flag
+
 
 
     return current_sol_swap, current_dist_swap, current_move_swap, current_feasible_flag
@@ -148,7 +142,7 @@ def shift_loop(
                 dist_aux, feasible_flag = total_distance(distances, aux_solution, nodes, capacity)
 
                 # se a solução atual eh feasible, não são aceitas soluções infeasible
-                if current_feasible_flag and not feasible_flag:
+                if not feasible_flag:
                     continue
 
                 # atualiza a solução atual da vizinhança
@@ -166,13 +160,6 @@ def shift_loop(
                         current_dist_shift = dist_aux
                         current_move_shift = movement
                         current_feasible_flag = feasible_flag
-                
-                # Se a distancia da solucao atual for maior que a solucao ja encontrada, 
-                # se for menor que a solucao inicial (recebida por parametro) e feasible
-                elif dist_aux > current_dist_shift and dist_aux < dist_sol and feasible_flag:
-                        current_sol_shift = aux_solution.copy()
-                        current_dist_shift = dist_aux
-                        current_move_shift = movement
-                        current_feasible_flag = feasible_flag
+
 
     return current_sol_shift, current_dist_shift, current_move_shift, current_feasible_flag
