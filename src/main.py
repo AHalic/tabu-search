@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime
 
 from read_input import read_input
 from tabu_list import algorithm
@@ -36,12 +37,13 @@ if __name__ == '__main__':
            1162
           ]
              
-    tenure = [5, 10, 15, 25]
-    num_iteration = [10, 100, 500, 1000]
-    initial = [True, False]
 
+    print("Inicio do log:", datetime.now(), end='\n\n')
     for index_opt, file in enumerate(files):
         nodes, vehicles, clients, vehicle_capacity = read_input(f'input/{file}')
+        tenure = [5, 10, 15, 25]
+        num_iteration = [10, 100, 500, 1000]
+        initial = [True, False]
         
         if int(clients/2) not in tenure:
             tenure.append(int(clients/2))
@@ -56,7 +58,7 @@ if __name__ == '__main__':
                     for i in range(5):
                         # Log message
                         print("*"*30)
-                        print(f"Teste #{i + 1}")
+                        print(f"Caso:{file} | Teste #{i + 1}")
 
                         if solution == True:
                             print('Solução inicial: Savings', end=" | ")
@@ -88,5 +90,5 @@ if __name__ == '__main__':
                         print(f"Tempo: {round(tempo, 2)}s | Iter sem mudanças: {alg_iter} | Custo: {best_sol_dist} | Gap: {round(((best_sol_dist - opt[index_opt]) / opt[index_opt]), 6)}", end='\n\n')
     
     test_data.to_csv('log/teste1.csv', index_label='num_teste')    
-
+    print("Fim do log:", datetime.now(), end='\n\n')
     
