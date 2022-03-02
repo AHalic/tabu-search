@@ -1,11 +1,22 @@
 import pandas as pd
 from datetime import datetime
+import os.path
+
 
 from read_input import read_input
 from tabu_list import algorithm
 
+TEST = 2
+
 if __name__ == '__main__':
-    test_data = pd.DataFrame(columns=['caso','tenure','max_iter','sol_ini','iter_sem_mod','tempo','custo', 'gap'])
+    
+    # Arquivo existe
+    if os.path.isfile(f'log/teste{TEST}.csv'):
+        test_data = pd.read_csv(f'log/teste{TEST}.csv', index_col=0)
+    else:
+        test_data = pd.DataFrame(columns=['caso','tenure','max_iter','sol_ini','iter_sem_mod','tempo','custo', 'gap'])
+    
+    file_writer = open(f'log/teste{TEST}.txt', 'w')
 
     files = [ # A-nX-kY.vrp
              "A-n32-k5.vrp",
@@ -38,7 +49,9 @@ if __name__ == '__main__':
           ]
              
 
-    print("Inicio do log:", datetime.now(), end='\n\n')
+    file_writer.write(f"Inicio do log: {datetime.now()}\n\n")
+
+    border = "*"*30 + "\n"
     for index_opt, file in enumerate(files):
         nodes, vehicles, clients, vehicle_capacity = read_input(f'input/{file}')
         tenure = [5, 10, 15, 25]
@@ -57,23 +70,24 @@ if __name__ == '__main__':
 
                     for i in range(5):
                         # Log message
-                        print("*"*30)
-                        print(f"Caso:{file} | Teste #{i + 1}")
-
+                        file_writer.write(border)
+                        file_writer.write(f"Caso:{file} | Teste #{i + 1}\n")
+                        
+                        header1 = ""
                         if solution == True:
-                            print('Solução inicial: Savings', end=" | ")
+                            header1 += 'Solucao inicial: Savings | '
                         else:
-                            print('Solução inicial: Aleatório', end=" | ")
+                            header1 += 'Solucao inicial: Aleatorio | '
                 
-                        print(f"Tenure: {t}", end=" | ")
-                        print(f'Max iter: {iter_}', end='\n\n')
+                        header1 += f"Tenure: {t} | Max iter: {iter_}\n\n"
+                        file_writer.write(header1)
 
                         if solution:
                             aux_sol = 'Savings'
                         else:
                             aux_sol = 'Random'
 
-                        tempo, alg_iter, best_sol_dist = algorithm(nodes, vehicles, clients, vehicle_capacity, t, iter_, solution)
+                        tempo, alg_iter, best_sol_dist = algorithm(nodes, vehicles, clients, vehicle_capacity, t, iter_max=iter_,savings=solution, file_writer=file_writer)
                         
                         aux_data = {
                             'caso': file,
@@ -87,8 +101,8 @@ if __name__ == '__main__':
                         }
 
                         test_data = test_data.append(aux_data, ignore_index=True)
-                        print(f"Tempo: {round(tempo, 2)}s | Iter sem mudanças: {alg_iter} | Custo: {best_sol_dist} | Gap: {round(((best_sol_dist - opt[index_opt]) / opt[index_opt]), 6)}", end='\n\n')
+                        test_data.to_csv(f'log/teste{TEST}.csv', index_label='num_teste')
+                        file_writer.write(f"Tempo: {round(tempo, 2)}s | Iter sem mudancas: {alg_iter} | Custo: {best_sol_dist} | Gap: {round(((best_sol_dist - opt[index_opt]) / opt[index_opt]), 6)}\n")
     
-    test_data.to_csv('log/teste1.csv', index_label='num_teste')    
-    print("Fim do log:", datetime.now(), end='\n\n')
-    
+    file_writer.write(f"Fim do log: {datetime.now()}\n\n")
+    file_writer.close()
