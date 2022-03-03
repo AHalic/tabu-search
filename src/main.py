@@ -19,38 +19,39 @@ if __name__ == '__main__':
     file_writer = open(f'log/teste{TEST}.txt', 'w')
 
     files = [ # A-nX-kY.vrp
-             "A-n32-k5.vrp",
-             "A-n54-k7.vrp",
-             "A-n80-k10.vrp",
+            #  "A-n32-k5.vrp",
+            #  "A-n54-k7.vrp",
+            #  "A-n80-k10.vrp",
 
             #  # B-nX-kY.vrp
-             "B-n31-k5.vrp",
-             "B-n43-k6.vrp",
-             "B-n68-k9.vrp",
+            #  "B-n31-k5.vrp",
+            #  "B-n43-k6.vrp",
+            #  "B-n68-k9.vrp",
 
             #  # F-nX-kY.vrp
              "F-n45-k4.vrp",
-             "F-n72-k4.vrp",
-             "F-n135-k7.vrp"
+            #  "F-n72-k4.vrp",
+            #  "F-n135-k7.vrp"
              ]
     
     opt = [# A-nX-kY.vrp
-           784, 
-           1167,
-           1763,
-           # B-nX-kY.vrp
-           672,
-           742,
-           1272,
+        #    784, 
+        #    1167,
+        #    1763,
+        #    # B-nX-kY.vrp
+        #    672,
+        #    742,
+        #    1272,
            # F-nX-kY.vrp 
            724,
-           237, 
-           1162
+        #    237, 
+        #    1162
           ]
              
 
     file_writer.write(f"Inicio do log: {datetime.now()}\n\n")
 
+    testes = 1
     border = "*"*30 + "\n"
     for index_opt, file in enumerate(files):
         nodes, vehicles, clients, vehicle_capacity = read_input(f'input/{file}')
@@ -68,7 +69,7 @@ if __name__ == '__main__':
 
                 for iter_ in num_iteration:
 
-                    for i in range(5):
+                    for i in range(testes):
                         # Log message
                         file_writer.write(border)
                         file_writer.write(f"Caso:{file} | Teste #{i + 1}\n")
@@ -88,7 +89,7 @@ if __name__ == '__main__':
                             aux_sol = 'Random'
 
                         tempo, alg_iter, best_sol_dist = algorithm(nodes, vehicles, clients, vehicle_capacity, t, iter_max=iter_,savings=solution, file_writer=file_writer)
-                        
+                        print('terminei a prim')
                         aux_data = {
                             'caso': file,
                             'tenure': t,
