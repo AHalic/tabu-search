@@ -155,6 +155,7 @@ def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, cl
         # Contador de indices de rotas que estao feasible
         index_count = set()
 
+        # TODO O ERRO TA NESSE LOOP
         while True:
             max_free_space = check_free_space(limit, savings_solution_sorted)
 
@@ -193,7 +194,6 @@ def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, cl
 
             # Procura uma rota para adicionar
             while aux_index < vehicles:
-                
                 route_destiny = savings_solution_sorted[aux_index]
 
                 # Se a capacidade da cidade passa do limite
