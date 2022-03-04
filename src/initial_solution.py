@@ -2,7 +2,7 @@ from typing import List
 
 import numpy as np
 
-from graph import sum_route_capacity
+from graph import show_routes, sum_route_capacity
 from utils import sort_with_key
 from moves import shift
 
@@ -23,12 +23,13 @@ def calculate_savings(nodes: List[dict], dist: np.array, clients: int) -> List[d
     - "capacity": float
 
     """
+
     best_savings = []
     for i in range(clients):
             for j in range(i+1, clients):
                 aux = dict()
                 # Calculo de economia di0 + doj - dij
-                aux['saving'] = dist[i][0] + dist[0][j] - dist[i][j]
+                aux['saving'] = dist[0][i] + dist[0][j] - dist[i][j]
 
                 # Valor negativo de economia nao eh triangulo
                 # Valor nulo de economia eh ligacao depot - cidade - depot
@@ -76,14 +77,18 @@ def savings_initial_sol(dist: np.array, nodes:  List[dict], vehicles: int, clien
     # Cria n rotas, com n = clients
     solution = create_n_routes(nodes, clients)
 
+    count = 0
+
     # Junta rotas ate quantidade de rotas == veiculos. Permite penalidade
     while len(solution) > vehicles and len(best_savings) > 0:
         # Tupla de economia, com o valor da economia e as cidades que pertence
         saving_tuple = best_savings.pop(0)
+        count += 1
 
         # Valores das cidades da economia
         i = saving_tuple['cities'][0]
         j = saving_tuple['cities'][1]
+
         
         # Nao foi encontrado rotas que tem as cidades i e j
         route_i = False
@@ -99,13 +104,13 @@ def savings_initial_sol(dist: np.array, nodes:  List[dict], vehicles: int, clien
                 route_j = (route, index)
             index += 1
 
+
         # Caso em que cidades i e j estao na mesma rota
         if route_i[1] == route_j[1]:
             continue
         
         # Une cidades
         route = join_route(route_i[0], route_j[0], i, j)
-
         aux_capacity = sum_route_capacity(route, nodes)
 
         # A rota unida esta vazia ou ultrapassou penalidade% da capacidade
@@ -147,7 +152,7 @@ def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, cl
     savings_solution = savings_initial_sol(distances, nodes, vehicles, clients, limit, penalidade)
     savings_solution_sorted = sort_with_key(savings_solution, 'capacity')  
     new_solution = [np.array(route['route']) for route in savings_solution_sorted]
-    
+
     # Se a primeira rota ultrapassa em limite, a solucao nao eh feasible
     if savings_solution_sorted[0]['capacity'] > limit:
         index = 0
@@ -155,7 +160,6 @@ def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, cl
         # Contador de indices de rotas que estao feasible
         index_count = set()
 
-        # TODO O ERRO TA NESSE LOOP
         while True:
             max_free_space = check_free_space(limit, savings_solution_sorted)
 
@@ -196,7 +200,7 @@ def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, cl
             while aux_index < vehicles:
                 route_destiny = savings_solution_sorted[aux_index]
 
-                # Se a capacidade da cidade passa do limite
+                # Se a capacidade da rota passa do limite
                 if route_destiny['capacity'] > limit:
                     aux_index += 1
                     continue
