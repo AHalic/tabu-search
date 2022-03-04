@@ -3,6 +3,7 @@ from typing import List, Set, Tuple
 import numpy as np
 import random
 from math import ceil 
+import time
 
 from graph import total_distance
 from moves import swap, shift
@@ -29,13 +30,16 @@ def best_neighbor(
     if (current_flag_swap and not current_flag_shift) or (current_flag_swap and  current_dist_swap <= current_dist_shift) or (not current_flag_shift and  current_dist_swap <= current_dist_shift):
         if len(tabu_list) == tenure:
             tabu_list.pop(0)
-        tabu_list.append(current_move_swap)
+        if current_move_swap not in tabu_list:
+            tabu_list.append(current_move_swap)
 
         return current_sol_swap, current_dist_swap, tabu_list, current_flag_swap
     else:
         if len(tabu_list) == tenure:
             tabu_list.pop(0)
-        tabu_list.append(current_move_shift)
+        
+        if current_move_shift not in tabu_list:
+            tabu_list.append(current_move_shift)
 
         return current_sol_shift, current_dist_shift, tabu_list, current_flag_shift
 
@@ -60,8 +64,8 @@ def swap_loop(
     e flag referente a se a solucao encontrada eh feasible. 
     """
     current_sol_swap, current_dist_swap = None, None
-    count_swaps = 0
     
+    inicio = time.time()
     for i in range(0, max_routes):
         # gera um sample aleatorio de cidades da rota 1
         c1_indexes = random.sample(range(len(solution[i])), k=int(ceil(len(solution[i]) / 2)))
@@ -72,7 +76,9 @@ def swap_loop(
             for i_c1 in c1_indexes:
                 # faz o swap entre todas as cidades e do sample e da rota 2
                 for i_c2 in range(len(solution[j])):
-                    count_swaps += 1
+                    if time.time() - inicio > 30:
+                        return current_sol_swap, current_dist_swap, current_move_swap, current_feasible_flag
+                        
                     aux_solution, movement = swap(solution, i, j, i_c1, i_c2)
 
                     dist_aux, feasible_flag = total_distance(distances, aux_solution, nodes, capacity)
@@ -97,8 +103,6 @@ def swap_loop(
                             current_move_swap = movement
                             current_feasible_flag = feasible_flag
 
-
-
     return current_sol_swap, current_dist_swap, current_move_swap, current_feasible_flag
 
 def shift_loop(
@@ -119,11 +123,11 @@ def shift_loop(
     feasibles. Retorna a melhor solucao encontrada, a distancia dela, o movimento tabu e 
     flag se a solucao encontrada eh feasible. 
     """
-    count_shifts = 0
     current_sol_shift, current_dist_shift = None, None
-
-
+    
+    inicio = time.time()
     for rota_1 in range(0, max_routes):
+
         # Não faz shift se a rota só tem um elemento 
         if len(solution[rota_1]) == 1:
             continue
@@ -135,8 +139,11 @@ def shift_loop(
             
             # testa shift de todas as cidades da rota 1 para a rota 2
             for i_cidade in range(len(solution[rota_1])):
-                count_shifts += 1
-
+                
+                # Para se ultrapassar o tempo limite de uma busca local
+                if (time.time() - inicio) > 30:
+                    return current_sol_shift, current_dist_shift, current_move_shift, current_feasible_flag
+                
                 aux_solution, movement = shift(solution, rota_1, rota_2, i_cidade)                    
 
                 dist_aux, feasible_flag = total_distance(distances, aux_solution, nodes, capacity)
@@ -161,6 +168,6 @@ def shift_loop(
                         current_move_shift = movement
                         current_feasible_flag = feasible_flag
 
-
+    
     return current_sol_shift, current_dist_shift, current_move_shift, current_feasible_flag
     
