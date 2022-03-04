@@ -1,0 +1,6 @@
+Inicio do log: 2022-03-03 09:16:18.729577
+
+******************************
+Caso:F-n45-k4.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 5 | Max iter: 10
+
