@@ -31,7 +31,7 @@ def get_route(value: int, routes: List[np.array]) -> int:
 
 def distance(node1: dict, node2: dict) -> float:
     """
-    Dado dois nos, calcula a distancia euclediana
+    Dado dois nos, calcula a distancia euclidiana
     """
     return ((node1['x'] - node2['x'])**2 + (node1['y'] - node2['y'])**2)**(1/2)
 
@@ -86,8 +86,10 @@ def clients_distance(nodes: List[dict], clients: int) -> np.array:
     distances = np.zeros((clients, clients),dtype=float)
 
     for i in range(clients):
-        for j in range(i, clients):
-            distances[i][j] = round(distance(nodes[i], nodes[j]), 0)
+        for j in range(i + 1, clients):
+            # distances[i][j] = round(distance(nodes[i], nodes[j]), 0)
+            distances[i][j] = distance(nodes[i], nodes[j])
+
 
     return distances
 
