@@ -1,0 +1,25 @@
+Inicio do log: 2022-03-04 20:57:48.484012
+
+******************************
+Caso:A-n32-k5.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 14 18 28 4 11 8 9 22 15 
+Capacidade: 100
+Distancia da rota: 260.9470312273603
+Rota #2 - 12 1 7 13 6 26 10 
+Capacidade: 94
+Distancia da rota: 284.69276668179856
+Rota #3 - 23 2 3 17 19 31 21 
+Capacidade: 99
+Distancia da rota: 213.21747629992083
+Rota #4 - 20 25 5 27 29 24 
+Capacidade: 85
+Distancia da rota: 237.4055291320896
+Rota #5 - 16 30 
+Capacidade: 32
+Distancia da rota: 51.47557384096973
+
+Distancia total: 1047.738377182139
+

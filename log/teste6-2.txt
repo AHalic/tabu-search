@@ -1,0 +1,4371 @@
+Inicio do log: 2022-03-05 00:24:57.983571
+
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 43.14s | Iter sem mudancas: 100 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Savings | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 43.37s | Iter sem mudancas: 100 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Savings | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 62 44 5 29 17 60 39 
+Capacidade: 99
+Distancia da rota: 155.36616650595275
+Rota #5 - 23 24 6 30 59 27 64 77 51 
+Capacidade: 93
+Distancia da rota: 194.7473030195838
+Rota #6 - 36 53 67 66 58 38 73 49 
+Capacidade: 96
+Distancia da rota: 128.87205368722877
+Rota #7 - 10 71 52 28 8 78 11 63 
+Capacidade: 94
+Distancia da rota: 224.46492992327035
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 13 12 74 3 42 
+Capacidade: 93
+Distancia da rota: 126.29786094980207
+
+Tempo: 43.0s | Iter sem mudancas: 100 | Custo: 1917.1623838065673 | Gap: 0.087443
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Savings | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 42.14s | Iter sem mudancas: 100 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Savings | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 62 44 5 29 74 60 39 77 
+Capacidade: 100
+Distancia da rota: 153.25139500015507
+Rota #5 - 23 24 6 30 59 27 64 51 
+Capacidade: 91
+Distancia da rota: 194.71635234904832
+Rota #6 - 73 36 53 67 66 58 38 49 
+Capacidade: 96
+Distancia da rota: 128.26556957899484
+Rota #7 - 10 71 52 28 8 78 11 63 
+Capacidade: 94
+Distancia da rota: 224.46492992327035
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 17 12 13 
+Capacidade: 94
+Distancia da rota: 139.95471519929447
+
+Tempo: 43.38s | Iter sem mudancas: 100 | Custo: 1928.0670317714928 | Gap: 0.093628
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 177.54s | Iter sem mudancas: 500 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Savings | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 176.33s | Iter sem mudancas: 500 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Savings | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 73 36 67 66 58 38 49 
+Capacidade: 83
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 28 52 63 11 8 78 27 77 
+Capacidade: 100
+Distancia da rota: 243.92733853578255
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 178.78s | Iter sem mudancas: 500 | Custo: 1930.1114335073246 | Gap: 0.094788
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Savings | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 74 60 39 77 
+Capacidade: 98
+Distancia da rota: 145.57037672482062
+Rota #5 - 23 24 6 30 59 27 64 36 
+Capacidade: 100
+Distancia da rota: 196.9450072336336
+Rota #6 - 51 3 53 67 66 58 38 49 
+Capacidade: 98
+Distancia da rota: 150.3420581444757
+Rota #7 - 10 71 28 52 11 8 78 17 
+Capacidade: 92
+Distancia da rota: 231.1686964956874
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 13 42 73 
+Capacidade: 73
+Distancia da rota: 101.0746084940453
+Rota #10 - 1 7 63 62 
+Capacidade: 90
+Distancia da rota: 124.26583156557362
+
+Tempo: 170.47s | Iter sem mudancas: 500 | Custo: 1951.0196529420934 | Gap: 0.106648
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Savings | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 62 44 5 29 74 60 39 77 
+Capacidade: 100
+Distancia da rota: 153.25139500015507
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 17 12 13 
+Capacidade: 94
+Distancia da rota: 139.95471519929447
+
+Tempo: 177.7s | Iter sem mudancas: 500 | Custo: 1947.6972647623013 | Gap: 0.104763
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 41.16s | Iter sem mudancas: 100 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Savings | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 62 44 5 29 74 60 39 77 
+Capacidade: 100
+Distancia da rota: 153.25139500015507
+Rota #5 - 23 24 6 30 59 64 51 
+Capacidade: 87
+Distancia da rota: 194.2063250395818
+Rota #6 - 73 36 53 67 66 58 38 49 
+Capacidade: 96
+Distancia da rota: 128.26556957899484
+Rota #7 - 10 71 28 52 63 11 8 78 27 
+Capacidade: 98
+Distancia da rota: 240.13254494160802
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 17 12 13 
+Capacidade: 94
+Distancia da rota: 139.95471519929447
+
+Tempo: 41.73s | Iter sem mudancas: 100 | Custo: 1943.224619480364 | Gap: 0.102226
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Savings | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 62 44 5 29 74 60 39 77 
+Capacidade: 100
+Distancia da rota: 153.25139500015507
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 17 12 13 
+Capacidade: 94
+Distancia da rota: 139.95471519929447
+
+Tempo: 41.72s | Iter sem mudancas: 100 | Custo: 1947.6972647623013 | Gap: 0.104763
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Savings | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 73 36 67 66 58 38 49 
+Capacidade: 83
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 28 52 63 11 8 78 27 77 
+Capacidade: 100
+Distancia da rota: 243.92733853578255
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 44.01s | Iter sem mudancas: 100 | Custo: 1930.1114335073246 | Gap: 0.094788
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Savings | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 40.97s | Iter sem mudancas: 100 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 175.45s | Iter sem mudancas: 500 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Savings | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 175.54s | Iter sem mudancas: 500 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Savings | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 62 44 5 29 74 60 39 77 
+Capacidade: 100
+Distancia da rota: 153.25139500015507
+Rota #5 - 23 24 6 30 59 64 51 
+Capacidade: 87
+Distancia da rota: 194.2063250395818
+Rota #6 - 73 36 53 67 66 58 38 49 
+Capacidade: 96
+Distancia da rota: 128.26556957899484
+Rota #7 - 10 71 28 52 63 11 8 78 27 
+Capacidade: 98
+Distancia da rota: 240.13254494160802
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 17 12 13 
+Capacidade: 94
+Distancia da rota: 139.95471519929447
+
+Tempo: 177.09s | Iter sem mudancas: 500 | Custo: 1943.224619480364 | Gap: 0.102226
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Savings | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 73 36 67 66 58 38 49 
+Capacidade: 83
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 28 52 63 11 8 78 27 77 
+Capacidade: 100
+Distancia da rota: 243.92733853578255
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 27735.82s | Iter sem mudancas: 115 | Custo: 1930.1114335073246 | Gap: 0.094788
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Savings | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 181.26s | Iter sem mudancas: 500 | Custo: 1937.4459605917307 | Gap: 0.098948
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 85 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 77 73 
+Capacidade: 98
+Distancia da rota: 199.7524397084213
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 27 
+Capacidade: 98
+Distancia da rota: 240.13254494160802
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 105.37s | Iter sem mudancas: 100 | Custo: 1906.852902560595 | Gap: 0.081596
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Savings | Tenure: 85 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 77 73 
+Capacidade: 98
+Distancia da rota: 199.7524397084213
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 27 
+Capacidade: 98
+Distancia da rota: 240.13254494160802
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 109.87s | Iter sem mudancas: 100 | Custo: 1906.852902560595 | Gap: 0.081596
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Savings | Tenure: 85 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 73 36 67 66 58 38 49 
+Capacidade: 83
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 28 52 63 11 8 78 27 77 
+Capacidade: 100
+Distancia da rota: 243.92733853578255
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 111.99s | Iter sem mudancas: 100 | Custo: 1900.1444623769687 | Gap: 0.07779
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Savings | Tenure: 85 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 77 73 
+Capacidade: 98
+Distancia da rota: 199.7524397084213
+Rota #6 - 36 53 67 66 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 27 
+Capacidade: 98
+Distancia da rota: 240.13254494160802
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 110.18s | Iter sem mudancas: 100 | Custo: 1906.852902560595 | Gap: 0.081596
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Savings | Tenure: 85 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 17 60 39 77 51 
+Capacidade: 92
+Distancia da rota: 145.0531999288781
+Rota #5 - 62 24 6 30 59 27 23 
+Capacidade: 100
+Distancia da rota: 177.78235625236567
+Rota #6 - 73 36 53 67 66 58 38 49 
+Capacidade: 96
+Distancia da rota: 128.26556957899484
+Rota #7 - 10 71 28 52 63 11 8 78 64 
+Capacidade: 100
+Distancia da rota: 261.8851834367351
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 29 13 
+Capacidade: 87
+Distancia da rota: 123.23225728557968
+
+Tempo: 109.37s | Iter sem mudancas: 100 | Custo: 1893.665665072927 | Gap: 0.074116
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 85 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 73 36 66 67 58 38 49 
+Capacidade: 83
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 28 52 63 11 8 78 27 77 
+Capacidade: 100
+Distancia da rota: 243.92733853578255
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 274.82s | Iter sem mudancas: 500 | Custo: 1900.1444623769687 | Gap: 0.07779
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Savings | Tenure: 85 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 20 75 25 46 41 15 55 9 54 72 
+Capacidade: 100
+Distancia da rota: 247.72673393205173
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 77 53 
+Capacidade: 99
+Distancia da rota: 201.52265611876769
+Rota #6 - 73 36 67 66 38 49 
+Capacidade: 76
+Distancia da rota: 112.84626075499318
+Rota #7 - 10 71 28 52 63 11 8 78 27 31 
+Capacidade: 100
+Distancia da rota: 243.53302038628814
+Rota #8 - 70 76 50 45 22 4 32 58 
+Capacidade: 99
+Distancia da rota: 194.5865472785477
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 300.18s | Iter sem mudancas: 307 | Custo: 1893.671653681408 | Gap: 0.074119
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Savings | Tenure: 85 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 77 73 
+Capacidade: 98
+Distancia da rota: 199.7524397084213
+Rota #6 - 36 53 66 67 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 27 
+Capacidade: 98
+Distancia da rota: 240.13254494160802
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 285.58s | Iter sem mudancas: 500 | Custo: 1906.852902560595 | Gap: 0.081596
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Savings | Tenure: 85 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 
+Capacidade: 99
+Distancia da rota: 301.42382145605075
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 62 44 5 29 17 60 39 
+Capacidade: 99
+Distancia da rota: 155.36616650595275
+Rota #5 - 23 24 6 30 59 27 33 64 77 51 
+Capacidade: 94
+Distancia da rota: 215.6455334200394
+Rota #6 - 73 36 53 67 66 58 38 49 
+Capacidade: 96
+Distancia da rota: 128.26556957899484
+Rota #7 - 10 71 52 28 8 78 11 63 
+Capacidade: 94
+Distancia da rota: 224.46492992327035
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 12 13 
+Capacidade: 93
+Distancia da rota: 126.29786094980209
+
+Tempo: 249.8s | Iter sem mudancas: 500 | Custo: 1901.8848652106005 | Gap: 0.078778
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Savings | Tenure: 85 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 77 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 246.4335202852776
+Rota #4 - 13 44 5 29 17 60 39 51 
+Capacidade: 96
+Distancia da rota: 148.05437049011346
+Rota #5 - 23 24 6 30 59 31 64 53 
+Capacidade: 99
+Distancia da rota: 197.68508745106607
+Rota #6 - 73 36 67 66 58 38 49 
+Capacidade: 83
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 28 52 63 11 8 78 27 
+Capacidade: 98
+Distancia da rota: 240.13254494160802
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 12 62 
+Capacidade: 99
+Distancia da rota: 134.15834662241383
+
+Tempo: 300.18s | Iter sem mudancas: 475 | Custo: 1899.100534995122 | Gap: 0.077198
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 100 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 74 77 51 
+Capacidade: 100
+Distancia da rota: 152.51982758348757
+Rota #5 - 62 24 6 30 59 27 23 
+Capacidade: 100
+Distancia da rota: 177.78235625236567
+Rota #6 - 73 36 66 67 58 38 49 
+Capacidade: 83
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 28 52 63 11 8 78 64 
+Capacidade: 100
+Distancia da rota: 261.8851834367351
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 53 39 3 13 
+Capacidade: 92
+Distancia da rota: 122.65474868044355
+
+Tempo: 80.14s | Iter sem mudancas: 100 | Custo: 1892.9077415785544 | Gap: 0.073686
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Savings | Tenure: 100 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 23 24 6 30 59 27 64 73 
+Capacidade: 100
+Distancia da rota: 198.4112522966498
+Rota #6 - 36 53 66 67 58 38 49 
+Capacidade: 84
+Distancia da rota: 126.63002248037279
+Rota #7 - 10 71 28 52 63 11 8 78 51 
+Capacidade: 97
+Distancia da rota: 242.03581006509958
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 75.78s | Iter sem mudancas: 100 | Custo: 1907.4789894613748 | Gap: 0.081951
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Savings | Tenure: 100 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 77 
+Capacidade: 99
+Distancia da rota: 147.83810448692347
+Rota #5 - 62 24 6 30 59 27 23 
+Capacidade: 100
+Distancia da rota: 177.78235625236567
+Rota #6 - 36 53 66 67 58 38 73 49 
+Capacidade: 96
+Distancia da rota: 128.87205368722877
+Rota #7 - 10 71 28 52 63 11 8 78 64 
+Capacidade: 100
+Distancia da rota: 261.8851834367351
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 13 74 3 51 42 
+Capacidade: 80
+Distancia da rota: 110.9305639360809
+
+Tempo: 79.05s | Iter sem mudancas: 100 | Custo: 1884.7553603897077 | Gap: 0.069061
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Savings | Tenure: 100 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 
+Capacidade: 99
+Distancia da rota: 301.42382145605075
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 41 15 55 9 54 33 64 
+Capacidade: 96
+Distancia da rota: 254.51530428361673
+Rota #4 - 62 44 5 29 17 60 39 
+Capacidade: 99
+Distancia da rota: 155.36616650595275
+Rota #5 - 23 24 6 30 59 46 77 51 
+Capacidade: 94
+Distancia da rota: 195.8532859613624
+Rota #6 - 36 53 67 66 58 38 73 49 
+Capacidade: 96
+Distancia da rota: 128.87205368722877
+Rota #7 - 10 71 28 52 63 11 8 78 27 
+Capacidade: 98
+Distancia da rota: 240.13254494160802
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 13 12 74 3 42 
+Capacidade: 93
+Distancia da rota: 126.29786094980207
+
+Tempo: 42.69s | Iter sem mudancas: 100 | Custo: 1907.4530607412323 | Gap: 0.081936
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Savings | Tenure: 100 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 12 44 5 29 17 60 39 51 
+Capacidade: 100
+Distancia da rota: 147.77409529786368
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 73 36 66 67 58 38 49 
+Capacidade: 83
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 28 52 63 11 8 78 27 77 
+Capacidade: 100
+Distancia da rota: 243.92733853578255
+Rota #8 - 70 72 76 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.45249979855328
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 62 13 
+Capacidade: 95
+Distancia da rota: 135.1167015419553
+
+Tempo: 77.16s | Iter sem mudancas: 100 | Custo: 1900.1444623769687 | Gap: 0.07779
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Savings | Tenure: 100 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 13 44 5 29 17 60 39 51 
+Capacidade: 96
+Distancia da rota: 148.05437049011346
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 49 73 38 58 66 36 
+Capacidade: 78
+Distancia da rota: 121.22501114338283
+Rota #7 - 10 71 63 11 52 28 8 78 27 77 
+Capacidade: 100
+Distancia da rota: 237.70069945240942
+Rota #8 - 67 70 76 72 45 22 4 32 50 
+Capacidade: 99
+Distancia da rota: 202.91411959368918
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 12 62 
+Capacidade: 99
+Distancia da rota: 134.15834662241383
+
+Tempo: 284.95s | Iter sem mudancas: 500 | Custo: 1895.3078474696736 | Gap: 0.075047
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Savings | Tenure: 100 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 20 75 25 46 41 15 55 9 54 72 
+Capacidade: 100
+Distancia da rota: 247.72673393205173
+Rota #4 - 12 44 5 29 74 60 39 51 
+Capacidade: 99
+Distancia da rota: 145.5063675357608
+Rota #5 - 23 24 6 30 17 31 64 36 
+Capacidade: 96
+Distancia da rota: 197.74020524551503
+Rota #6 - 3 53 67 66 38 73 49 
+Capacidade: 100
+Distancia da rota: 144.24046211806464
+Rota #7 - 10 71 28 52 11 8 78 59 27 77 
+Capacidade: 100
+Distancia da rota: 233.10062417046106
+Rota #8 - 70 76 50 45 22 4 32 58 
+Capacidade: 99
+Distancia da rota: 194.5865472785477
+Rota #9 - 40 21 13 42 
+Capacidade: 61
+Distancia da rota: 95.00445245565403
+Rota #10 - 62 63 7 1 
+Capacidade: 90
+Distancia da rota: 124.26583156557363
+
+Tempo: 262.06s | Iter sem mudancas: 500 | Custo: 1906.975867235697 | Gap: 0.081665
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Savings | Tenure: 100 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 31 20 75 25 46 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 245.42896042087966
+Rota #4 - 13 44 5 29 17 60 39 51 
+Capacidade: 96
+Distancia da rota: 148.05437049011346
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 73 36 66 58 38 49 
+Capacidade: 78
+Distancia da rota: 120.6185270351489
+Rota #7 - 10 71 63 11 52 28 8 78 27 77 
+Capacidade: 100
+Distancia da rota: 237.70069945240942
+Rota #8 - 67 70 72 76 50 45 22 4 32 
+Capacidade: 99
+Distancia da rota: 201.4686540790478
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 12 62 
+Capacidade: 99
+Distancia da rota: 134.15834662241383
+
+Tempo: 300.24s | Iter sem mudancas: 315 | Custo: 1893.2558978467985 | Gap: 0.073883
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Savings | Tenure: 100 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 20 75 25 46 41 15 55 9 54 72 
+Capacidade: 100
+Distancia da rota: 247.72673393205173
+Rota #4 - 13 44 5 29 17 60 39 77 51 
+Capacidade: 98
+Distancia da rota: 148.11998765061674
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 36 66 67 38 73 49 
+Capacidade: 76
+Distancia da rota: 113.45274486322712
+Rota #7 - 10 71 63 11 52 28 8 78 27 31 
+Capacidade: 100
+Distancia da rota: 237.30638130291504
+Rota #8 - 58 32 4 22 45 50 76 70 
+Capacidade: 99
+Distancia da rota: 194.58654727854764
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 42 3 74 12 62 
+Capacidade: 99
+Distancia da rota: 134.15834662241383
+
+Tempo: 300.04s | Iter sem mudancas: 308 | Custo: 1881.1770813965572 | Gap: 0.067032
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Savings | Tenure: 100 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 47 56 69 65 35 26 19 57 61 16 43 68 33 
+Capacidade: 100
+Distancia da rota: 336.99308634423926
+Rota #2 - 34 37 2 79 18 48 14 77 
+Capacidade: 99
+Distancia da rota: 249.70576558946675
+Rota #3 - 31 46 20 75 25 41 15 55 9 54 
+Capacidade: 100
+Distancia da rota: 249.11997484349058
+Rota #4 - 12 44 5 29 60 39 74 
+Capacidade: 96
+Distancia da rota: 146.92526467248646
+Rota #5 - 23 24 6 30 59 27 73 64 
+Capacidade: 100
+Distancia da rota: 292.5775526515173
+Rota #6 - 51 3 53 67 66 38 36 58 
+Capacidade: 97
+Distancia da rota: 199.6594946222615
+Rota #7 - 10 71 28 52 11 63 8 
+Capacidade: 92
+Distancia da rota: 232.8715723177022
+Rota #8 - 70 76 72 50 45 22 4 32 
+Capacidade: 94
+Distancia da rota: 201.47218691282183
+Rota #9 - 40 7 1 42 78 13 
+Capacidade: 100
+Distancia da rota: 224.19192217251037
+Rota #10 - 49 21 17 62 
+Capacidade: 64
+Distancia da rota: 186.7789931495903
+
+Distancia total: 2320.295813276087
+
+-Solucao final-
+Rota #1 - 33 56 69 65 35 26 47 19 57 61 16 43 68 
+Capacidade: 100
+Distancia da rota: 307.0261152138834
+Rota #2 - 34 37 2 79 18 48 14 
+Capacidade: 97
+Distancia da rota: 217.77852772018517
+Rota #3 - 46 20 75 25 41 15 55 9 54 72 
+Capacidade: 100
+Distancia da rota: 248.95516529293388
+Rota #4 - 13 3 74 60 39 77 51 
+Capacidade: 93
+Distancia da rota: 125.42131459110476
+Rota #5 - 23 24 6 30 59 64 53 
+Capacidade: 97
+Distancia da rota: 195.2607013758446
+Rota #6 - 42 36 67 66 38 73 49 
+Capacidade: 99
+Distancia da rota: 120.32568787138585
+Rota #7 - 10 71 28 52 63 11 8 78 27 31 
+Capacidade: 100
+Distancia da rota: 243.53302038628814
+Rota #8 - 70 76 50 45 22 4 32 58 
+Capacidade: 99
+Distancia da rota: 194.5865472785477
+Rota #9 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 29 17 5 44 12 62 
+Capacidade: 81
+Distancia da rota: 149.40833138561717
+
+Tempo: 4122.2s | Iter sem mudancas: 59 | Custo: 1888.0564065526628 | Gap: 0.070934
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 3 39 46 41 47 56 55 54 72 70 
+Capacidade: 100
+Distancia da rota: 233.0163140752121
+Rota #2 - 62 34 2 24 6 23 
+Capacidade: 89
+Distancia da rota: 185.41916906307088
+Rota #3 - 1 42 73 49 
+Capacidade: 72
+Distancia da rota: 98.37644593147073
+Rota #4 - 12 30 68 16 57 35 65 69 64 53 
+Capacidade: 93
+Distancia da rota: 281.25422259579926
+Rota #5 - 66 67 38 58 50 32 4 9 15 33 51 
+Capacidade: 99
+Distancia da rota: 261.16290211707053
+Rota #6 - 74 59 37 8 43 26 19 77 36 
+Capacidade: 97
+Distancia da rota: 282.4561986581284
+Rota #7 - 60 25 75 20 61 78 5 44 13 
+Capacidade: 99
+Distancia da rota: 213.8778197164596
+Rota #8 - 76 45 22 31 17 27 29 
+Capacidade: 99
+Distancia da rota: 223.68031644254825
+Rota #9 - 40 21 71 48 18 79 
+Capacidade: 95
+Distancia da rota: 189.86482564343572
+Rota #10 - 7 63 11 52 28 14 10 
+Capacidade: 99
+Distancia da rota: 161.13958707487524
+
+Tempo: 65.89s | Iter sem mudancas: 100 | Custo: 2130.2478013180707 | Gap: 0.208308
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 9 55 41 17 44 12 
+Capacidade: 92
+Distancia da rota: 222.77350482320406
+Rota #2 - 28 34 2 37 24 62 
+Capacidade: 83
+Distancia da rota: 192.74432408007408
+Rota #3 - 42 53 70 72 76 38 49 
+Capacidade: 93
+Distancia da rota: 149.7257567726775
+Rota #4 - 23 30 78 61 57 19 47 64 77 51 
+Capacidade: 96
+Distancia da rota: 235.57954403084352
+Rota #5 - 63 11 5 60 50 32 58 73 
+Capacidade: 98
+Distancia da rota: 232.33704724544813
+Rota #6 - 3 39 75 20 68 16 26 35 65 69 15 33 
+Capacidade: 100
+Distancia da rota: 296.8530855254114
+Rota #7 - 74 31 46 25 59 27 29 13 
+Capacidade: 92
+Distancia da rota: 183.7357874687201
+Rota #8 - 4 22 45 54 56 43 8 6 
+Capacidade: 98
+Distancia da rota: 328.2300289670155
+Rota #9 - 40 7 1 66 67 36 
+Capacidade: 91
+Distancia da rota: 133.4454356229824
+Rota #10 - 10 71 52 79 18 48 14 21 
+Capacidade: 99
+Distancia da rota: 191.4022757656341
+
+Tempo: 60.82s | Iter sem mudancas: 100 | Custo: 2166.826790302011 | Gap: 0.229057
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 49 9 55 15 64 42 
+Capacidade: 81
+Distancia da rota: 210.79986599323377
+Rota #2 - 2 37 8 57 25 46 77 51 
+Capacidade: 94
+Distancia da rota: 239.30957061449183
+Rota #3 - 73 36 66 67 70 50 4 32 58 38 
+Capacidade: 99
+Distancia da rota: 192.52017960823255
+Rota #4 - 74 17 20 19 47 65 69 56 53 
+Capacidade: 99
+Distancia da rota: 254.32518575076304
+Rota #5 - 40 1 62 12 5 41 33 54 72 
+Capacidade: 100
+Distancia da rota: 223.4460009544949
+Rota #6 - 3 39 60 31 68 16 43 35 26 75 27 44 
+Capacidade: 99
+Distancia da rota: 284.5975411794568
+Rota #7 - 59 61 78 6 23 13 
+Capacidade: 98
+Distancia da rota: 202.4819972024328
+Rota #8 - 45 22 76 29 30 24 34 
+Capacidade: 91
+Distancia da rota: 258.51190467080073
+Rota #9 - 7 79 28 71 10 
+Capacidade: 91
+Distancia da rota: 163.60562837335632
+Rota #10 - 21 63 11 52 18 48 14 
+Capacidade: 90
+Distancia da rota: 196.19004929347315
+
+Tempo: 66.59s | Iter sem mudancas: 100 | Custo: 2225.7879236407357 | Gap: 0.2625
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 74 29 17 46 41 15 33 64 77 51 
+Capacidade: 87
+Distancia da rota: 191.47157305106282
+Rota #2 - 18 79 11 23 12 
+Capacidade: 97
+Distancia da rota: 202.39680357295907
+Rota #3 - 1 7 21 40 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #4 - 30 78 61 57 26 35 65 69 56 39 
+Capacidade: 99
+Distancia da rota: 272.4580194505212
+Rota #5 - 42 3 72 76 53 36 73 
+Capacidade: 99
+Distancia da rota: 159.72704963264601
+Rota #6 - 62 2 37 8 68 43 16 19 47 31 
+Capacidade: 97
+Distancia da rota: 262.7076943331647
+Rota #7 - 6 20 75 59 27 5 44 13 
+Capacidade: 99
+Distancia da rota: 202.0454063914567
+Rota #8 - 32 4 22 45 38 49 
+Capacidade: 99
+Distancia da rota: 194.1503878565558
+Rota #9 - 63 28 52 60 50 58 70 67 66 
+Capacidade: 99
+Distancia da rota: 251.1122956350732
+Rota #10 - 54 9 55 25 24 34 48 14 71 10 
+Capacidade: 90
+Distancia da rota: 293.6185001018207
+
+Tempo: 76.81s | Iter sem mudancas: 100 | Custo: 2115.4487254621326 | Gap: 0.199914
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #2 - 28 2 37 8 5 12 
+Capacidade: 92
+Distancia da rota: 207.6779804275713
+Rota #3 - 48 18 79 22 4 32 
+Capacidade: 97
+Distancia da rota: 322.8885364725247
+Rota #4 - 44 61 57 19 15 33 31 17 29 51 
+Capacidade: 99
+Distancia da rota: 250.29020404820653
+Rota #5 - 49 13 63 11 34 52 14 71 10 
+Capacidade: 92
+Distancia da rota: 185.87956813872322
+Rota #6 - 3 74 78 68 16 43 35 26 75 20 46 
+Capacidade: 100
+Distancia da rota: 286.440523349911
+Rota #7 - 27 59 30 6 24 23 62 
+Capacidade: 100
+Distancia da rota: 171.92343522051993
+Rota #8 - 53 50 45 58 38 73 
+Capacidade: 88
+Distancia da rota: 162.95337681217643
+Rota #9 - 60 25 41 47 65 69 56 55 67 66 36 
+Capacidade: 100
+Distancia da rota: 254.0407323521692
+Rota #10 - 42 77 39 64 9 54 72 76 70 
+Capacidade: 98
+Distancia da rota: 205.9264726931603
+
+Tempo: 74.26s | Iter sem mudancas: 100 | Custo: 2133.781824951835 | Gap: 0.210313
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 76 50 45 38 49 
+Capacidade: 83
+Distancia da rota: 162.47374764779664
+Rota #2 - 34 2 37 24 5 29 74 13 
+Capacidade: 97
+Distancia da rota: 193.55954086316177
+Rota #3 - 62 12 44 53 66 67 36 73 
+Capacidade: 93
+Distancia da rota: 152.29676418012417
+Rota #4 - 17 20 75 19 47 69 56 15 46 60 51 
+Capacidade: 100
+Distancia da rota: 242.601683742251
+Rota #5 - 70 72 54 9 55 33 64 42 
+Capacidade: 76
+Distancia da rota: 207.33838197356067
+Rota #6 - 3 39 31 61 16 43 26 35 65 41 77 
+Capacidade: 100
+Distancia da rota: 284.0987560256188
+Rota #7 - 25 57 68 6 30 59 27 
+Capacidade: 100
+Distancia da rota: 241.60810362474822
+Rota #8 - 58 32 4 22 7 1 
+Capacidade: 97
+Distancia da rota: 237.240057387384
+Rota #9 - 71 28 52 11 63 21 40 
+Capacidade: 100
+Distancia da rota: 160.89551943535972
+Rota #10 - 23 78 8 79 18 48 14 10 
+Capacidade: 96
+Distancia da rota: 241.0469162531879
+
+Tempo: 198.08s | Iter sem mudancas: 500 | Custo: 2123.159471133193 | Gap: 0.204288
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 42 77 39 46 47 56 55 33 54 70 73 
+Capacidade: 100
+Distancia da rota: 238.4587876464757
+Rota #2 - 52 2 37 8 23 62 13 
+Capacidade: 98
+Distancia da rota: 205.84072908963816
+Rota #3 - 5 59 17 60 53 66 67 
+Capacidade: 95
+Distancia da rota: 169.68878530057634
+Rota #4 - 63 11 34 78 19 65 69 64 36 
+Capacidade: 81
+Distancia da rota: 278.12750754615706
+Rota #5 - 76 72 22 4 32 58 38 49 
+Capacidade: 99
+Distancia da rota: 198.9863837155441
+Rota #6 - 74 27 68 43 16 57 26 35 3 51 
+Capacidade: 94
+Distancia da rota: 278.9414717216915
+Rota #7 - 6 61 75 20 31 29 44 12 
+Capacidade: 100
+Distancia da rota: 217.4658962520587
+Rota #8 - 50 45 9 15 41 25 30 24 
+Capacidade: 99
+Distancia da rota: 260.2903204109204
+Rota #9 - 40 21 7 1 
+Capacidade: 76
+Distancia da rota: 85.76099543687232
+Rota #10 - 71 28 79 18 48 14 10 
+Capacidade: 100
+Distancia da rota: 190.1587695923674
+
+Tempo: 207.53s | Iter sem mudancas: 500 | Custo: 2123.7196467123013 | Gap: 0.204606
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 36 53 41 25 59 27 5 13 
+Capacidade: 99
+Distancia da rota: 190.78469206268733
+Rota #2 - 34 2 37 8 6 24 11 
+Capacidade: 91
+Distancia da rota: 203.77212800365817
+Rota #3 - 51 17 31 66 67 32 4 58 38 49 
+Capacidade: 98
+Distancia da rota: 258.0898213308147
+Rota #4 - 42 77 19 47 69 56 55 9 54 70 
+Capacidade: 99
+Distancia da rota: 252.63316857217097
+Rota #5 - 7 62 23 64 33 72 76 73 
+Capacidade: 96
+Distancia da rota: 215.71749370008965
+Rota #6 - 39 46 75 61 16 43 57 26 35 65 15 
+Capacidade: 100
+Distancia da rota: 295.5867769267696
+Rota #7 - 3 60 74 29 12 
+Capacidade: 81
+Distancia da rota: 139.37201311597033
+Rota #8 - 50 45 22 20 68 78 30 44 
+Capacidade: 100
+Distancia da rota: 266.68658500654317
+Rota #9 - 79 18 48 71 10 
+Capacidade: 78
+Distancia da rota: 188.3446618102325
+Rota #10 - 1 63 52 28 14 21 40 
+Capacidade: 100
+Distancia da rota: 158.01290729388776
+
+Tempo: 204.85s | Iter sem mudancas: 500 | Custo: 2169.000247822824 | Gap: 0.230289
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 7 23 59 19 47 69 56 15 33 
+Capacidade: 98
+Distancia da rota: 252.00436050960988
+Rota #2 - 79 2 37 6 24 
+Capacidade: 90
+Distancia da rota: 194.83478808301757
+Rota #3 - 13 62 12 53 70 67 66 36 
+Capacidade: 92
+Distancia da rota: 159.93032709564636
+Rota #4 - 1 27 20 75 60 51 73 
+Capacidade: 77
+Distancia da rota: 199.56314591714582
+Rota #5 - 40 63 11 64 54 22 4 32 
+Capacidade: 97
+Distancia da rota: 274.4942147278018
+Rota #6 - 3 31 17 30 8 16 26 35 65 39 77 
+Capacidade: 100
+Distancia da rota: 302.1115233964095
+Rota #7 - 61 57 25 41 46 5 44 
+Capacidade: 96
+Distancia da rota: 231.8313216844776
+Rota #8 - 50 45 76 72 34 52 28 10 21 
+Capacidade: 99
+Distancia da rota: 265.6181014938146
+Rota #9 - 14 71 55 9 58 38 49 
+Capacidade: 94
+Distancia da rota: 280.4111144320146
+Rota #10 - 42 74 29 78 68 43 18 48 
+Capacidade: 99
+Distancia da rota: 259.5746286376879
+
+Tempo: 191.87s | Iter sem mudancas: 500 | Custo: 2420.3735259776254 | Gap: 0.372872
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Aleatorio | Tenure: 25 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 38 9 69 65 19 3 
+Capacidade: 92
+Distancia da rota: 269.68772118421487
+Rota #2 - 10 18 79 34 30 41 15 33 64 77 51 
+Capacidade: 97
+Distancia da rota: 272.9468995859609
+Rota #3 - 42 67 66 36 73 49 
+Capacidade: 76
+Distancia da rota: 92.97241709373449
+Rota #4 - 53 60 46 25 47 56 55 54 76 70 
+Capacidade: 93
+Distancia da rota: 238.99423537729456
+Rota #5 - 21 63 11 39 72 50 32 58 
+Capacidade: 98
+Distancia da rota: 237.4694528554029
+Rota #6 - 13 74 31 78 68 16 43 35 26 57 5 44 
+Capacidade: 97
+Distancia da rota: 284.1227389747653
+Rota #7 - 17 20 75 61 59 27 29 
+Capacidade: 99
+Distancia da rota: 202.77154672488183
+Rota #8 - 4 22 45 24 52 28 71 
+Capacidade: 99
+Distancia da rota: 293.81047906809107
+Rota #9 - 40 1 7 62 12 
+Capacidade: 97
+Distancia da rota: 130.42424210889618
+Rota #10 - 23 6 8 37 2 48 14 
+Capacidade: 94
+Distancia da rota: 221.40403002193912
+
+Tempo: 198.75s | Iter sem mudancas: 500 | Custo: 2244.603762995181 | Gap: 0.273173
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 5 27 59 6 11 21 40 
+Capacidade: 100
+Distancia da rota: 180.6749030526836
+Rota #2 - 48 18 79 24 30 23 44 
+Capacidade: 96
+Distancia da rota: 216.00972861337317
+Rota #3 - 50 45 22 76 12 14 10 
+Capacidade: 100
+Distancia da rota: 257.838148879988
+Rota #4 - 78 61 20 35 65 69 56 25 39 77 51 
+Capacidade: 97
+Distancia da rota: 285.1476066933893
+Rota #5 - 1 63 62 72 32 4 54 33 70 36 
+Capacidade: 100
+Distancia da rota: 305.6115121252801
+Rota #6 - 28 2 37 8 43 16 26 47 19 75 31 
+Capacidade: 100
+Distancia da rota: 285.1703917944135
+Rota #7 - 9 55 15 41 46 17 29 
+Capacidade: 93
+Distancia da rota: 217.19952002495288
+Rota #8 - 53 64 57 68 34 52 71 7 
+Capacidade: 95
+Distancia da rota: 247.4608779091967
+Rota #9 - 73 67 66 58 38 49 
+Capacidade: 71
+Distancia da rota: 119.65303842593053
+Rota #10 - 42 3 60 74 13 
+Capacidade: 90
+Distancia da rota: 121.55017129681544
+
+Tempo: 62.88s | Iter sem mudancas: 100 | Custo: 2236.315898816023 | Gap: 0.268472
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 70 9 55 41 5 23 12 
+Capacidade: 99
+Distancia da rota: 234.17062691479055
+Rota #2 - 24 34 37 2 79 28 
+Capacidade: 89
+Distancia da rota: 198.7305964753407
+Rota #3 - 60 31 27 59 72 50 4 32 58 38 
+Capacidade: 97
+Distancia da rota: 260.0974991778519
+Rota #4 - 1 74 46 25 47 56 53 36 
+Capacidade: 100
+Distancia da rota: 234.0892398721762
+Rota #5 - 7 62 29 17 15 33 64 77 51 13 
+Capacidade: 100
+Distancia da rota: 209.03111288329882
+Rota #6 - 3 39 75 57 19 69 65 35 26 
+Capacidade: 100
+Distancia da rota: 286.2875158551617
+Rota #7 - 6 8 68 61 30 21 40 
+Capacidade: 98
+Distancia da rota: 229.28285909765634
+Rota #8 - 76 45 22 54 20 16 43 78 44 
+Capacidade: 97
+Distancia da rota: 278.2266274599154
+Rota #9 - 42 67 66 73 49 
+Capacidade: 64
+Distancia da rota: 92.00692848451614
+Rota #10 - 63 11 52 18 48 14 71 10 
+Capacidade: 98
+Distancia da rota: 192.8143537222647
+
+Tempo: 60.85s | Iter sem mudancas: 100 | Custo: 2214.737359942972 | Gap: 0.256232
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 9 55 33 39 60 3 
+Capacidade: 95
+Distancia da rota: 208.52268612523483
+Rota #2 - 12 6 37 2 24 23 
+Capacidade: 99
+Distancia da rota: 185.1564731894206
+Rota #3 - 36 70 72 76 50 32 58 38 49 
+Capacidade: 95
+Distancia da rota: 166.72308940326022
+Rota #4 - 5 59 27 31 17 29 13 
+Capacidade: 81
+Distancia da rota: 155.20937324786217
+Rota #5 - 48 18 79 77 53 66 67 73 
+Capacidade: 100
+Distancia da rota: 228.4030533737338
+Rota #6 - 74 46 25 75 20 16 26 35 65 69 56 47 15 51 
+Capacidade: 100
+Distancia da rota: 306.2729037683501
+Rota #7 - 61 57 19 41 64 42 
+Capacidade: 97
+Distancia da rota: 224.76436056072126
+Rota #8 - 45 4 22 54 78 68 43 8 30 44 
+Capacidade: 94
+Distancia da rota: 330.77044719994757
+Rota #9 - 7 10 63 1 
+Capacidade: 81
+Distancia da rota: 125.97161534822956
+Rota #10 - 62 11 34 52 28 14 71 21 40 
+Capacidade: 100
+Distancia da rota: 173.9166089305857
+
+Tempo: 73.68s | Iter sem mudancas: 100 | Custo: 2105.710611147346 | Gap: 0.194391
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 21 7 1 73 49 
+Capacidade: 88
+Distancia da rota: 108.73374487440755
+Rota #2 - 28 79 23 5 17 31 77 51 
+Capacidade: 99
+Distancia da rota: 202.0475036070864
+Rota #3 - 53 39 60 64 72 76 70 67 66 
+Capacidade: 90
+Distancia da rota: 176.54080855142146
+Rota #4 - 36 57 26 35 65 69 56 55 15 33 38 
+Capacidade: 97
+Distancia da rota: 300.4101199589423
+Rota #5 - 18 2 37 54 4 32 50 58 
+Capacidade: 95
+Distancia da rota: 336.69973370336294
+Rota #6 - 3 20 75 61 16 43 68 78 40 
+Capacidade: 99
+Distancia da rota: 227.46848103850004
+Rota #7 - 44 27 46 41 25 59 6 24 
+Capacidade: 98
+Distancia da rota: 220.55738345356428
+Rota #8 - 45 22 9 47 19 8 34 
+Capacidade: 97
+Distancia da rota: 295.18121606878054
+Rota #9 - 71 63 62 12 13 
+Capacidade: 80
+Distancia da rota: 149.89796846179695
+Rota #10 - 42 74 29 30 11 52 48 14 10 
+Capacidade: 99
+Distancia da rota: 218.16139246273252
+
+Tempo: 59.74s | Iter sem mudancas: 100 | Custo: 2235.698352180595 | Gap: 0.268122
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 7 62 23 44 51 42 
+Capacidade: 93
+Distancia da rota: 140.34403218252734
+Rota #2 - 34 8 37 2 79 52 71 10 
+Capacidade: 98
+Distancia da rota: 212.3409905207644
+Rota #3 - 12 59 74 67 66 50 4 32 
+Capacidade: 97
+Distancia da rota: 276.6639167085397
+Rota #4 - 1 5 27 20 65 35 57 68 78 30 
+Capacidade: 99
+Distancia da rota: 289.8362278809764
+Rota #5 - 13 63 11 24 46 54 72 76 70 
+Capacidade: 89
+Distancia da rota: 238.8116819139541
+Rota #6 - 3 39 60 75 16 43 26 47 19 29 
+Capacidade: 100
+Distancia da rota: 270.0876359254173
+Rota #7 - 6 61 25 41 15 36 73 
+Capacidade: 96
+Distancia da rota: 233.36920589296602
+Rota #8 - 45 22 9 33 64 77 49 
+Capacidade: 94
+Distancia da rota: 224.9756980229164
+Rota #9 - 38 58 17 31 56 69 55 53 
+Capacidade: 95
+Distancia da rota: 274.7155042467924
+Rota #10 - 40 21 14 18 48 28 
+Capacidade: 81
+Distancia da rota: 187.23558204669825
+
+Tempo: 55.63s | Iter sem mudancas: 100 | Custo: 2348.3804753415525 | Gap: 0.332037
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 13 29 5 12 1 
+Capacidade: 73
+Distancia da rota: 134.45740712973017
+Rota #2 - 6 2 37 8 25 46 77 51 
+Capacidade: 96
+Distancia da rota: 233.43405781631967
+Rota #3 - 44 11 34 18 48 14 71 21 40 
+Capacidade: 95
+Distancia da rota: 210.96266648442779
+Rota #4 - 17 59 20 75 56 47 19 43 78 30 
+Capacidade: 98
+Distancia da rota: 273.5374111482814
+Rota #5 - 7 10 63 62 76 72 54 33 64 
+Capacidade: 100
+Distancia da rota: 258.6313680810046
+Rota #6 - 42 74 23 24 68 16 26 35 65 69 15 
+Capacidade: 100
+Distancia da rota: 296.87371439100866
+Rota #7 - 9 55 41 57 61 27 31 
+Capacidade: 99
+Distancia da rota: 262.47819697727783
+Rota #8 - 50 22 45 58 38 
+Capacidade: 89
+Distancia da rota: 164.0765578639113
+Rota #9 - 52 28 79 4 32 70 67 66 36 
+Capacidade: 97
+Distancia da rota: 302.5955064409618
+Rota #10 - 49 73 53 39 60 3 
+Capacidade: 95
+Distancia da rota: 129.81901854264885
+
+Tempo: 195.58s | Iter sem mudancas: 500 | Custo: 2266.865904875572 | Gap: 0.2858
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 38 45 9 55 15 31 13 
+Capacidade: 99
+Distancia da rota: 229.76109353215804
+Rota #2 - 7 28 79 52 23 77 51 
+Capacidade: 98
+Distancia da rota: 188.0638448077708
+Rota #3 - 74 29 17 53 66 67 36 
+Capacidade: 90
+Distancia da rota: 151.20052910641536
+Rota #4 - 59 20 75 19 35 65 69 56 73 49 
+Capacidade: 100
+Distancia da rota: 271.7679528885986
+Rota #5 - 1 63 62 72 50 32 4 54 33 70 
+Capacidade: 98
+Distancia da rota: 305.77528893712275
+Rota #6 - 3 39 60 68 16 43 26 47 41 64 
+Capacidade: 100
+Distancia da rota: 262.69559099970763
+Rota #7 - 61 57 25 46 27 44 12 
+Capacidade: 92
+Distancia da rota: 228.52642076275708
+Rota #8 - 58 22 76 6 24 34 11 
+Capacidade: 93
+Distancia da rota: 257.2744455578205
+Rota #9 - 71 48 18 14 21 40 
+Capacidade: 73
+Distancia da rota: 185.39528412311984
+Rota #10 - 42 5 30 78 8 37 2 10 
+Capacidade: 99
+Distancia da rota: 215.2816774407491
+
+Tempo: 193.04s | Iter sem mudancas: 500 | Custo: 2295.7421281562197 | Gap: 0.302179
+******************************
+Caso:A-n80-k10.vrp | Teste #3
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 36 41 25 46 31 60 39 77 51 
+Capacidade: 89
+Distancia da rota: 184.72223608047887
+Rota #2 - 79 2 37 24 30 5 13 
+Capacidade: 99
+Distancia da rota: 201.88350364672584
+Rota #3 - 12 44 53 70 32 4 58 38 49 
+Capacidade: 97
+Distancia da rota: 248.1243596350288
+Rota #4 - 17 20 75 57 19 65 69 56 15 33 
+Capacidade: 95
+Distancia da rota: 262.169159625475
+Rota #5 - 62 11 23 64 54 72 76 66 73 
+Capacidade: 96
+Distancia da rota: 228.7867202324684
+Rota #6 - 42 74 29 78 16 43 26 35 9 67 
+Capacidade: 97
+Distancia da rota: 298.2935297043843
+Rota #7 - 6 61 59 27 3 
+Capacidade: 94
+Distancia da rota: 204.39872115531819
+Rota #8 - 50 45 22 55 47 68 8 34 
+Capacidade: 95
+Distancia da rota: 292.86662860156406
+Rota #9 - 1 63 10 7 
+Capacidade: 81
+Distancia da rota: 125.97161534822956
+Rota #10 - 40 21 14 18 48 28 52 71 
+Capacidade: 99
+Distancia da rota: 190.0746876397522
+
+Tempo: 215.4s | Iter sem mudancas: 500 | Custo: 2237.291161669425 | Gap: 0.269025
+******************************
+Caso:A-n80-k10.vrp | Teste #4
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 53 9 55 46 31 17 13 
+Capacidade: 95
+Distancia da rota: 214.69416215337242
+Rota #2 - 11 24 37 2 34 52 28 14 21 
+Capacidade: 100
+Distancia da rota: 203.28296862050692
+Rota #3 - 42 29 60 72 76 38 49 
+Capacidade: 98
+Distancia da rota: 183.8421977778463
+Rota #4 - 15 56 69 47 19 68 8 6 30 23 
+Capacidade: 99
+Distancia da rota: 274.3263037122997
+Rota #5 - 73 66 67 58 32 4 54 33 64 39 77 51 
+Capacidade: 84
+Distancia da rota: 236.24407674849556
+Rota #6 - 74 59 78 16 43 26 35 65 41 3 
+Capacidade: 96
+Distancia da rota: 280.8033658898009
+Rota #7 - 61 57 20 75 25 27 5 44 
+Capacidade: 97
+Distancia da rota: 229.62997077052268
+Rota #8 - 45 22 50 70 36 
+Capacidade: 76
+Distancia da rota: 164.5570405174898
+Rota #9 - 10 71 48 18 79 63 
+Capacidade: 100
+Distancia da rota: 189.22984497231283
+Rota #10 - 1 12 62 7 40 
+Capacidade: 97
+Distancia da rota: 132.90564076055233
+
+Tempo: 206.94s | Iter sem mudancas: 500 | Custo: 2109.5155719232 | Gap: 0.196549
+******************************
+Caso:A-n80-k10.vrp | Teste #5
+Solucao inicial: Aleatorio | Tenure: 45 | Max iter: 500
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 13 51 77 74 62 7 21 
+Capacidade: 93
+Distancia da rota: 145.00681823675708
+Rota #2 - 18 79 34 24 30 44 12 
+Capacidade: 90
+Distancia da rota: 212.17277802869097
+Rota #3 - 3 39 60 6 48 14 10 
+Capacidade: 98
+Distancia da rota: 217.89957911788892
+Rota #4 - 59 61 57 19 47 65 69 56 15 33 
+Capacidade: 100
+Distancia da rota: 268.8883500124624
+Rota #5 - 1 63 23 31 76 58 49 
+Capacidade: 99
+Distancia da rota: 211.06040297467598
+Rota #6 - 11 2 37 8 68 16 43 35 26 78 27 5 
+Capacidade: 100
+Distancia da rota: 303.5924770909896
+Rota #7 - 20 75 25 46 17 29 40 
+Capacidade: 87
+Distancia da rota: 207.96560913965024
+Rota #8 - 45 22 4 32 50 73 
+Capacidade: 85
+Distancia da rota: 195.61117652457554
+Rota #9 - 71 28 52 70 38 67 66 36 
+Capacidade: 94
+Distancia da rota: 226.53795296439893
+Rota #10 - 42 64 41 55 9 54 72 53 
+Capacidade: 96
+Distancia da rota: 217.33599884198622
+
+Tempo: 197.16s | Iter sem mudancas: 500 | Custo: 2206.071142932076 | Gap: 0.251317
+******************************
+Caso:A-n80-k10.vrp | Teste #1
+Solucao inicial: Aleatorio | Tenure: 85 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
+-Solucao final-
+Rota #1 - 54 9 55 41 46 53 36 
+Capacidade: 88
+Distancia da rota: 216.4899897204399
+Rota #2 - 79 2 37 8 34 11 
+Capacidade: 85
+Distancia da rota: 210.36185526045332
+Rota #3 - 74 39 76 4 32 58 38 
+Capacidade: 98
+Distancia da rota: 222.67660280776235
+Rota #4 - 6 78 61 19 47 56 25 60 77 51 
+Capacidade: 98
+Distancia da rota: 249.64909694907004
+Rota #5 - 7 62 5 44 12 13 
+Capacidade: 89
+Distancia da rota: 137.5122656620939
+Rota #6 - 42 27 68 43 16 57 26 35 65 69 15 33 64 70 
+Capacidade: 97
+Distancia da rota: 299.3486052473024
+Rota #7 - 29 59 20 75 17 3 
+Capacidade: 96
+Distancia da rota: 186.26444831439642
+Rota #8 - 50 45 22 72 31 30 24 23 
+Capacidade: 96
+Distancia da rota: 244.32251795278088
+Rota #9 - 71 28 63 67 66 73 49 
+Capacidade: 95
+Distancia da rota: 197.08989349518637
+Rota #10 - 40 21 14 48 18 52 10 1 
+Capacidade: 100
+Distancia da rota: 190.93758236559205
+
+Tempo: 1646.46s | Iter sem mudancas: 81 | Custo: 2154.652857775078 | Gap: 0.222151
+******************************
+Caso:A-n80-k10.vrp | Teste #2
+Solucao inicial: Aleatorio | Tenure: 85 | Max iter: 100
+
+-Solucao inicial-
+Rota #1 - 7 45 62 41 5 69 
+Capacidade: 100
+Distancia da rota: 456.4559564854938
+Rota #2 - 18 2 23 49 46 24 15 77 
+Capacidade: 100
+Distancia da rota: 471.7936390112541
+Rota #3 - 22 59 12 53 66 48 4 
+Capacidade: 100
+Distancia da rota: 524.4136375805001
+Rota #4 - 1 61 20 60 29 56 67 31 78 
+Capacidade: 100
+Distancia da rota: 432.57509844436174
+Rota #5 - 79 63 11 13 50 58 70 34 33 
+Capacidade: 97
+Distancia da rota: 462.26276400105496
+Rota #6 - 3 39 37 19 8 16 26 35 
+Capacidade: 91
+Distancia da rota: 385.3763195173231
+Rota #7 - 6 57 55 25 10 44 27 47 
+Capacidade: 91
+Distancia da rota: 426.00038234975165
+Rota #8 - 9 17 76 36 30 52 43 54 
+Capacidade: 89
+Distancia da rota: 509.5136696423013
+Rota #9 - 38 28 21 71 32 64 51 65 
+Capacidade: 88
+Distancia da rota: 601.9691971280807
+Rota #10 - 42 74 40 73 68 75 14 72 
+Capacidade: 86
+Distancia da rota: 464.1636369033908
+
+Distancia total: 4734.524301063512
+
