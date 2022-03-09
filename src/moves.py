@@ -47,6 +47,6 @@ def shift(solution:List[np.array], r_o:int, r_d:int, i_c:int) -> Tuple[List[np.a
     new_solution[r_o] = np.delete(new_solution[r_o], i_c, axis=None)
     
     # cria o movimento tabu
-    tabu_move = (solution[r_o][i_c])
+    tabu_move = set([solution[r_o][i_c]])
 
     return new_solution, tabu_move
