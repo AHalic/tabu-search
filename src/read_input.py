@@ -4,7 +4,7 @@ import numpy as np
 
 from graph import create_node
 
-def read_input(file: str) -> Tuple[List[dict], int, int, int]:
+def read_input(file: str) -> Tuple[List[dict], int, int, int, int]:
     """
     Faz a leitura do arquivo de entrada. Arquivo deve ter a mesma estrutura
     que os arquivos de Augerat e Fisher do site http://vrp.atd-lab.inf.puc-rio.br/index.php/en/
@@ -17,7 +17,19 @@ def read_input(file: str) -> Tuple[List[dict], int, int, int]:
 
     with open(file) as f:
         # Pula as primeiras 4 linhas do arquivo
-        for _ in range(5):
+        next(f)
+
+        aux = f.readline()
+
+        if "Best value" in aux:
+            aux = aux.split("Best value")
+        else:
+            aux = aux.split("Optimal value")
+
+        optimal = int(aux[-1].replace(")", "").replace(" ", "").replace(":", "").replace("\n", ""))
+
+
+        for _ in range(3):
             next(f)
         
         vehicle_capacity = [int(k) for k in regex.findall(f.readline())][0]
@@ -34,4 +46,4 @@ def read_input(file: str) -> Tuple[List[dict], int, int, int]:
         for i in range(clients):
             nodes[i]['capacity'] = int(f.readline().split()[1])
         
-    return nodes, vehicles, clients, vehicle_capacity
+    return nodes, vehicles, clients, vehicle_capacity, optimal
