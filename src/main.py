@@ -2,11 +2,59 @@ import pandas as pd
 from datetime import datetime
 import os.path
 
+from math import ceil
 
 from read_input import read_input
 from tabu_list import algorithm
 
-TEST = 2
+TEST = 8
+
+def get_files():
+        return [ # A-nX-kY.vrp
+            # "A-n33-k5.vrp",
+            # "A-n33-k6.vrp",
+            # "A-n34-k5.vrp",
+            # "A-n36-k5.vrp",
+            # "A-n37-k5.vrp",
+            # "A-n37-k6.vrp",
+            # "A-n38-k5.vrp",
+            # "A-n39-k5.vrp",
+            # "A-n39-k6.vrp",
+            # "A-n44-k7.vrp",
+            # "A-n45-k6.vrp",
+            # "A-n45-k7.vrp",
+            # "A-n46-k7.vrp",
+            # "A-n48-k7.vrp",
+            # "A-n53-k7.vrp",
+            # "A-n55-k9.vrp",
+            # "A-n60-k9.vrp",
+            "A-n61-k9.vrp",
+            "A-n62-k8.vrp",
+            "A-n63-k10.vrp",
+            "A-n63-k10.vrp",
+            "A-n64-k9.vrp",
+            "A-n65-k9.vrp",
+            "A-n69-k9.vrp",
+
+             # B-nX-kY.vrp
+            "B-n34-k5.vrp",
+            "B-n35-k5.vrp",
+            "B-n38-k6.vrp",
+            "B-n39-k5.vrp",
+            "B-n41-k6.vrp",
+            "B-n44-k7.vrp",
+            "B-n45-k5.vrp",
+            "B-n50-k8.vrp",
+            "B-n51-k7.vrp",
+            "B-n52-k7.vrp",
+            "B-n56-k7.vrp",
+            "B-n57-k7.vrp",
+            "B-n57-k9.vrp",
+            "B-n63-k10.vrp",
+            "B-n64-k9.vrp",
+            "B-n66-k9.vrp",
+            "B-n67-k10.vrp"
+    ]
 
 if __name__ == '__main__':
     
@@ -18,47 +66,17 @@ if __name__ == '__main__':
     
     file_writer = open(f'log/teste{TEST}.txt', 'w')
 
-    files = [ # A-nX-kY.vrp
-             "A-n32-k5.vrp",
-             "A-n54-k7.vrp",
-             "A-n80-k10.vrp",
-
-             # B-nX-kY.vrp
-             "B-n31-k5.vrp",
-             "B-n43-k6.vrp",
-             "B-n68-k9.vrp",
-
-             # F-nX-kY.vrp
-             "F-n45-k4.vrp",
-             "F-n72-k4.vrp",
-             "F-n135-k7.vrp"
-             ]
-    
-    opt = [# A-nX-kY.vrp
-           784, 
-           1167,
-           1763,
-           # B-nX-kY.vrp
-           672,
-           742,
-           1272,
-           # F-nX-kY.vrp 
-           724,
-           237, 
-           1162
-          ]
-             
+    files = get_files()
 
     file_writer.write(f"Inicio do log: {datetime.now()}\n\n")
 
-    num_testes = 5
+    num_testes = 2
     border = "*"*30 + "\n"
     for index_opt, file in enumerate(files):
-        nodes, vehicles, clients, vehicle_capacity = read_input(f'input/{file}')
-        tenure = [5, 15, 25, 45]
-        num_iteration = [10, 100, 500]
-        initial = [True, False]
-
+        nodes, vehicles, clients, vehicle_capacity, optimal = read_input(f'input/{file}')
+        tenure = [ceil(clients * 1.2)]
+        num_iteration = [500]
+        initial = [True]
 
         for solution in initial:
             
@@ -95,12 +113,13 @@ if __name__ == '__main__':
                             'iter_sem_mod': alg_iter,
                             'tempo': tempo,
                             'custo': best_sol_dist,
-                            'gap': round(((best_sol_dist - opt[index_opt]) / opt[index_opt]), 6)
+                            'gap': round(((best_sol_dist - optimal) / optimal), 6),
+                            'otimo_global': optimal
                         }
 
                         test_data = test_data.append(aux_data, ignore_index=True)
                         test_data.to_csv(f'log/teste{TEST}.csv', index_label='num_teste')
-                        file_writer.write(f"Tempo: {round(tempo, 2)}s | Iter sem mudancas: {alg_iter} | Custo: {best_sol_dist} | Gap: {round(((best_sol_dist - opt[index_opt]) / opt[index_opt]), 6)}\n")
+                        file_writer.write(f"Tempo: {round(tempo, 2)}s | Iter sem mudancas: {alg_iter} | Custo: {best_sol_dist} | Gap: {round(((best_sol_dist - optimal) / optimal), 6)}\n")
     
     file_writer.write(f"Fim do log: {datetime.now()}\n\n")
     file_writer.close()
