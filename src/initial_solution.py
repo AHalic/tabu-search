@@ -188,7 +188,11 @@ def corrected_savings(distances: np.array, nodes:  List[dict], vehicles: int, cl
                 city = find_city_less_capacity(nodes, route_origin, max_free_space)
                 if city == -1:
                     print("Não tem rota com capacidade")
-                    quit()
+
+                    if penalidade == 2:
+                        quit()
+                    penalidade += 0.1
+                    return corrected_savings(distances, nodes, vehicles, clients, limit, penalidade)
 
             aux_index = 0
 
