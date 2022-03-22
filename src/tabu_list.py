@@ -1,5 +1,6 @@
 from typing import List, Tuple
 import time
+import pandas as pd
 
 from initial_solution import *
 from local_search import *
@@ -38,9 +39,11 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
     tempo = 0
     iter_ = 0
 
+    sol_dists = []
+    best_dists = []
     while tempo < 300 and iter_ < iter_max:
         aux_current_sol, aux_current_dist, tabu_list, aux_current_feasible_flag = best_neighbor(distances_between_clients, current_sol, current_dist, nodes, vehicles, vehicle_capacity, tabu_list, tenure, best_sol_dist, current_feasible_flag)
-        
+       
         if aux_current_sol != None:
             current_sol, current_dist, current_feasible_flag = aux_current_sol, aux_current_dist, aux_current_feasible_flag
             
@@ -52,11 +55,15 @@ def algorithm(nodes: List[dict], vehicles: int, clients: int, vehicle_capacity: 
             else:
                 iter_ += 1
 
+        sol_dists.append(aux_current_dist)
 
         fim = time.time()
         tempo = fim - inicio
 
     file_writer.write('-Solucao final-\n')
     show_routes(distances_between_clients, best_sol, nodes, vehicle_capacity, file_writer)
+
+    df = pd.DataFrame(sol_dists)
+    df.to_csv('log_dists.csv', index=True, index_label="iter")
 
     return tempo, iter_, best_sol_dist
